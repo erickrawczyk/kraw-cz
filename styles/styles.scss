@@ -155,13 +155,13 @@ section {
 #skills {
   background-color: rgba(1,1,1,0.5);
   i {
-    padding-top: 20px;
+    padding-top: 50px;
   }
 }
 #contact {
   background-color: rgba(1,1,1,0.7);
   i {
-    padding-top: 20px;
+    padding-top: 50px;
   }
 }
 
@@ -210,11 +210,10 @@ section {
       width: 33.33%;
     }
   }
-  .logo-right {
-    text-align: right;
-  }
-  .logo-left {
-    text-align: left;
+  #skills, #connect {
+    i {
+      padding-top: 30px;
+    }
   }
   section {
     h1  {
