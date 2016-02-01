@@ -20,6 +20,10 @@ body {
   font-family: $font-stack;
   color: white;
 }
+code {
+  background-color: rgba(0,0,0,0.8);
+  color: white;
+}
 .navbar-default {
   background-color: $bg-default;
   border: none;
@@ -86,6 +90,90 @@ body {
     }
   }
 }
+
+section {
+  height: 100%;
+  padding-top: 75px;
+  text-align: center;
+  background: rgba(0,0,0,0);
+  overflow: auto;
+  h1 {
+    font-weight: 300;
+    font-size: 8vw;
+  }
+  h2 {
+    font-size: 6vw;
+  }
+  h1,
+  h2 {
+    color: white;
+    text-shadow: 1px 1px 1px black;
+  }
+  hr {
+    width: 80%;
+  }
+  p {
+    font-size: 4vw;
+    font-weight: 300;
+  }
+  .col-lg-8 {
+    text-align: justify;
+  }
+  i {
+    padding-top: 50px;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+    opacity: 0.75;
+  }
+
+}
+#intro {
+  .container {
+    height: 100%;
+    display: table;
+    width: 100%;
+  }
+  .row {
+    height: 100%;
+    display: table-cell;
+    vertical-align: middle;
+  }
+  h1 {
+    font-size: 8vmax;
+  }
+  h2 {
+    font-size: 3.5vmax;
+    text-shadow: 1px 1px 1px black;
+  }
+  hr {
+    width: 70%;
+  }
+}
+#about {
+  background-color: rgba(1,1,1,0.4);
+}
+#skills {
+  background-color: rgba(1,1,1,0.5);
+  i {
+    padding-top: 20px;
+  }
+}
+#contact {
+  background-color: rgba(1,1,1,0.7);
+  i {
+    padding-top: 20px;
+  }
+}
+
+.logos {
+  margin-top: 20px;
+}
+.logo {
+  img {
+    max-width: 35%;
+  }
+}
+
 @media(min-width:767px) {
   .navbar {
     padding: 10px 0;
@@ -114,53 +202,29 @@ body {
       }
     }
   }
-}
-section {
-  height: 100%;
-  padding-top: 100px;
-  text-align: center;
-  background: rgba(0,0,0,0);
-  overflow: auto;
-  h1 {
-    font-size: 4em;
-    font-weight: 300;
+  .logos {
+    margin-top: 20px;
   }
-  h1, h2 {
-    color: white;
-    text-shadow: 1px 1px 1px black;
+  .logo {
+    img {
+      width: 33.33%;
+    }
   }
-  hr {
-    width: 80%;
+  .logo-right {
+    text-align: right;
   }
-  p {
-    font-size: 1.5em;
+  .logo-left {
+    text-align: left;
   }
-}
-#intro {
-  padding-top: 200px;
-  h1 {
-    font-size: 10vw;
+  section {
+    h1  {
+      font-size: 5em;
+    }
+    h2 {
+      font-size: 3em;
+    }
+    p {
+      font-size: 2em;
+    }
   }
-  h2 {
-    font-size: 5vmax;
-    text-shadow: 1px 1px 1px black;
-  }
-  hr {
-    width: 85%;
-  }
-  i {
-    padding-top: 50px;
-    color: white;
-    text-shadow: 1px 1px 1px black;
-    opacity: 0.75;
-  }
-}
-#about {
-  background-color: rgba(1,1,1,0.2);
-}
-#skills {
-  background-color: rgba(1,1,1,0.5);
-}
-#contact {
-  background-color: rgba(1,1,1,0.7);
 }
