@@ -2,6 +2,7 @@ var gulp = require('gulp');
 var sass = require('gulp-sass');
 var uglify = require('gulp-uglify');
 var htmlmin = require('gulp-htmlmin');
+var concat = require('gulp-concat');
 
 gulp.task('watch', ['build'], function () {
   gulp.watch(['*.html'], { interval: 1000}, ['html']);
@@ -24,7 +25,12 @@ gulp.task('css', function() {
 });
 
 gulp.task('js', function() {
-  return gulp.src('js/*.js')
+  return gulp.src([
+    'js/jquery.js',
+    'js/bootstrap.js',
+    'js/jquery.easing.js',
+    'js/scrolling-nav.js'
+  ]).pipe(concat('main.js'))
     .pipe(uglify({mangle:true}))
     .pipe(gulp.dest('dist/js'));
 });
