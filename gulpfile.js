@@ -20,6 +20,7 @@ gulp.task('html', function() {
 
 gulp.task('css', function() {
   return gulp.src('styles/*.scss')
+  .pipe(concat('styles.css'))
   .pipe(sass({outputStyle: 'compressed'}))
   .pipe(gulp.dest('dist/styles'));
 });
