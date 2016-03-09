@@ -20,21 +20,26 @@ gulp.task('html', () => {
 });
 
 gulp.task('css', () => {
-  return gulp.src('styles/*.scss')
-  .pipe(concat('styles.css'))
-  .pipe(sass({outputStyle: 'compressed'}))
-  .pipe(gulp.dest('dist/styles'));
+  return gulp.src([
+    'styles/*.scss'
+  ]).pipe(concat('styles.css'))
+    .pipe(sass({outputStyle: 'compressed'}))
+    .pipe(gulp.dest('dist/styles'));
 });
 
 gulp.task('js', () => {
-  return gulp.src([
+  gulp.src([
     'js/jquery.js',
     'js/bootstrap.js',
     'js/jquery.easing.js',
-    'js/scrolling-nav.js'
+    'js/scrolling-nav.js',
+    'js/puzzle.js'
   ]).pipe(concat('main.js'))
     .pipe(uglify({mangle:true}))
     .pipe(gulp.dest('dist/js'));
+
+  return gulp.src('node_modules/node-pace-progress/pace.min.js')
+    .pipe(gulp.dest('dist/js'))
 });
 
 gulp.task('img', () => {
