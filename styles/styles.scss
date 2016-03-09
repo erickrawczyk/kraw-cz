@@ -19,6 +19,9 @@ body {
   background-position: 85% 50%;
   font-family: $font-stack;
   color: white;
+  nav, section {
+    opacity: 0;
+  }
 }
 code {
   background-color: rgba(0,0,0,0.8);
@@ -180,9 +183,9 @@ section {
 @media(min-width:767px) {
   .navbar {
     padding: 10px 0;
-    -webkit-transition: background 0.5s ease-in-out,padding 0.5s ease-in-out;
-    -moz-transition: background 0.5s ease-in-out,padding 0.5s ease-in-out;
-    transition: background 0.5s ease-in-out,padding 0.5s ease-in-out;
+    -webkit-transition: background 0.5s ease-in-out,padding 0.5s ease-in-out,opacity .5s ease-in-out;
+    -moz-transition: background 0.5s ease-in-out,padding 0.5s ease-in-out,opacity .5s ease-in-out;
+    transition: background 0.5s ease-in-out,padding 0.5s ease-in-out,opacity .5s ease-in-out;
   }
   .top-nav-collapse {
     padding: 0;
