@@ -19,9 +19,6 @@ body {
   background-position: 85% 50%;
   font-family: $font-stack;
   color: white;
-  nav, section {
-    opacity: 0;
-  }
 }
 code {
   background-color: rgba(0,0,0,0.8);
@@ -100,6 +97,7 @@ section {
   text-align: center;
   background: rgba(0,0,0,0);
   overflow: auto;
+  border-top: 2px solid $col-highlight;
   h1 {
     font-weight: 300;
     font-size: 8vw;
@@ -153,18 +151,18 @@ section {
   }
 }
 #about {
-  background: linear-gradient(rgba(1,1,1,0.2), rgba(1,1,1,0.6)), url('../img/bavaria.jpg') no-repeat 80% 50% fixed;
+  background: linear-gradient(rgba(1,1,1,0.2), rgba(1,1,1,0.8)), url('../img/bavaria.jpg') no-repeat 80% 50% fixed;
   background-size: cover;
 }
 #skills {
-  background: linear-gradient(rgba(1,1,1,0.2), rgba(1,1,1,0.6)), url('../img/ann-arbor.jpg') no-repeat center top fixed;
+  background: linear-gradient(rgba(1,1,1,0.2), rgba(1,1,1,0.8)), url('../img/ann-arbor.jpg') no-repeat center top fixed;
   background-size: cover;
   i {
     padding-top: 50px;
   }
 }
 #contact {
-  background: linear-gradient(rgba(1,1,1,0.2), rgba(1,1,1,0.6)), url('../img/salzburg.jpg') no-repeat 35% 50% fixed;
+  background: linear-gradient(rgba(1,1,1,0.2), rgba(1,1,1,0.8)), url('../img/salzburg.jpg') no-repeat 35% 50% fixed;
   background-size: cover;
   i {
     padding-top: 50px;
