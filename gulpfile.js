@@ -28,20 +28,17 @@ gulp.task('css', () => {
 });
 
 gulp.task('js', () => {
-  gulp.src([
+  return gulp.src([
     'js/jquery.js'
   , 'js/bootstrap.js'
   , 'js/jquery.easing.js'
   , 'js/scrolling-nav.js'
   , 'node_modules/clipboard/dist/clipboard.js'
-  , 'js/copy.js'
+  , 'js/tooltip.js'
   , 'js/puzzle.js'
   ]).pipe(concat('main.js'))
     .pipe(uglify({mangle:true}))
     .pipe(gulp.dest('dist/js'));
-
-  return gulp.src('node_modules/node-pace-progress/pace.min.js')
-    .pipe(gulp.dest('dist/js'))
 });
 
 gulp.task('img', () => {
