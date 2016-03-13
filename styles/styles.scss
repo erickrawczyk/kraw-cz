@@ -177,7 +177,15 @@ section {
     max-width: 35%;
   }
 }
-
+#email {
+  cursor: pointer;
+  &:active { opacity: .5;}
+}
+.tooltip-inner {
+  white-space: pre-wrap;
+  font-size: 1.3em;
+  font-family: $font-stack;
+}
 @media(min-width:767px) {
   .navbar {
     padding: 10px 0;

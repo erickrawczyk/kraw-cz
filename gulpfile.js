@@ -29,11 +29,13 @@ gulp.task('css', () => {
 
 gulp.task('js', () => {
   gulp.src([
-    'js/jquery.js',
-    'js/bootstrap.js',
-    'js/jquery.easing.js',
-    'js/scrolling-nav.js',
-    'js/puzzle.js'
+    'js/jquery.js'
+  , 'js/bootstrap.js'
+  , 'js/jquery.easing.js'
+  , 'js/scrolling-nav.js'
+  , 'node_modules/clipboard/dist/clipboard.js'
+  , 'js/copy.js'
+  , 'js/puzzle.js'
   ]).pipe(concat('main.js'))
     .pipe(uglify({mangle:true}))
     .pipe(gulp.dest('dist/js'));
