@@ -5,20 +5,5 @@
 })();
 
 function breadcrumbs() {
-  var rand = Math.round(Math.random() * 3);
-  switch (rand) {
-    case 0:
-      console.log('%c' + "I'm sorry I lied I haven't built this yet :(", "color: red;");
-      break;
-    case 1:
-      console.log('%c' + "I'm sorry I lied I haven't built this yet :(", "color: red;");
-      break;
-    case 2:
-      console.log('%c' + "I'm sorry I lied I haven't built this yet :(", "color: red;");
-      break;
-    case 3:
-      console.log('%c' + "I'm sorry I lied I haven't built this yet :(", "color: red;");
-      break;
-  }
-  return
+  return console.log('%c' + "I lied I haven't built this yet 😢 I'm so sorry ", "color: red;");
 }

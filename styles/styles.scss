@@ -1,6 +1,6 @@
 $font-stack: 'Lato', "Helvetica", sans-serif;
 $bg-default: #646464;
-$bg-highlight: #306632;
+$bg-highlight: #333333;
 $col-default: #FFFFFF;
 $col-highlight: #FFFFFF;
 html {
@@ -126,6 +126,10 @@ section {
     text-shadow: 1px 1px 1px black;
     opacity: 0.75;
   }
+  a, a:hover {
+    color: white;
+    font-weight: 600;
+  }
 
 }
 #intro {
@@ -151,18 +155,24 @@ section {
   }
 }
 #about {
-  background: linear-gradient(rgba(1,1,1,0.2), rgba(1,1,1,0.8)), url('../img/emp-museum.jpg') no-repeat center fixed;
+  background: linear-gradient(rgba(1,1,1,0.3), rgba(1,1,1,0.8)), url('../img/emp-museum.jpg') no-repeat center fixed;
   background-size: cover;
 }
 #skills {
-  background: linear-gradient(rgba(1,1,1,0.2), rgba(1,1,1,0.8)), url('../img/nyc.jpg') no-repeat center top fixed;
+  background: linear-gradient(rgba(1,1,1,0.3), rgba(1,1,1,0.8)), url('../img/nyc.jpg') no-repeat center top fixed;
   background-size: cover;
   i {
     padding-top: 50px;
   }
 }
+
+#career {
+  background: linear-gradient(rgba(1,1,1,0.3), rgba(1,1,1,0.8)), url('../img/career-fair.jpg') no-repeat center top fixed;
+  background-size: cover;
+}
+
 #contact {
-  background: linear-gradient(rgba(1,1,1,0.2), rgba(1,1,1,0.8)), url('../img/sword.jpg') no-repeat center fixed;
+  background: linear-gradient(rgba(1,1,1,0.3), rgba(1,1,1,0.8)), url('../img/sword.jpg') no-repeat center fixed;
   background-size: cover;
   i {
     padding-top: 50px;
