@@ -10,8 +10,8 @@ const PAGES = [
     name: "About",
     backgroundImage: "emp-museum",
     backgroundPosition: 'center center',
-    title: "Hey, I'm Eric",
-    subtitle: "I'm a Software Developer from Ann Arbor, Michigan",
+    title: "Hey, I'm Eric!",
+    subtitle: "I'm a Developer from Ann Arbor, Michigan",
     contents: [
       "My name is Eric Krawczyk, and I make web applications. I spend a lot of time building things in JavaScript, but I'm pretty flexible. I've lived in quite a few places, but right now I'm located in Ann Arbor, Michigan. If you're interested in tech, music, or theatre, let's chat!"
     ]

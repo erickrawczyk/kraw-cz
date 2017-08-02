@@ -28,12 +28,14 @@ const Page = ({ name, title, backgroundImage, backgroundPosition, subtitle, cont
   return (
     <section id={name.toLowerCase()} className="page" style={style}>
       <div className="overlay">
+
         <div className="titles">
           <h1>{title}</h1>
           {subtitle ? <h2>{subtitle}</h2> : null}
-          <hr />
         </div>
+
         <div className="contents">
+          <hr />
           {generateContents(contents)}
         </div>
       </div>
