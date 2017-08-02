@@ -1,0 +1,22 @@
+@import "../../variables";
+
+.page {
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  border-bottom: 2px solid white;
+  color: $white;
+  height: 100vh;
+
+  .overlay {
+    background: linear-gradient(rgba(1,1,1,0.3), rgba(1,1,1,0.8));
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(9, 1fr);
+    grid-gap: 1em;
+    height: 100%;
+    width: 100%;
+  }
+
+}

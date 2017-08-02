@@ -1,0 +1,22 @@
+@import "../../variables";
+
+.contents {
+  grid-column-start: 2;
+  grid-column-end: -2;
+  grid-row-start: 3;
+  text-align: center;
+
+  hr, p {
+    font-size: 2.5vmax;
+  }
+
+  a {
+    font-weight: 900;
+    color: $white;
+  }
+
+  hr {
+    margin-bottom: 1em;
+  }
+
+}

@@ -1,4 +1,4 @@
-const PAGES = [
+const STATE = [
   {
     name: "Landing",
     backgroundImage: "scotland",
@@ -125,4 +125,4 @@ const PAGES = [
   },
 ]
 
-export default PAGES;
+export default STATE;

@@ -1,12 +1,12 @@
 import React from 'react'
 
 // import NavBar from './NavBar'
-import Page from './Page'
+import Page from '../Page/Page'
 
-import PAGES from '../pages.js'
+import STATE from '../../state.js'
 import './App.scss';
 
-const [landingPage, ...pages] = PAGES
+const [landingPage, ...pages] = STATE
 
 const App = () => (
   <div>
