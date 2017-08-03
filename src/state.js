@@ -11,9 +11,8 @@ const STATE = [
     backgroundImage: "emp-museum",
     backgroundPosition: 'center center',
     title: "Hey, I'm Eric!",
-    subtitle: "I'm a Developer from Ann Arbor, Michigan",
     contents: [
-      "My name is Eric Krawczyk, and I make web applications. I spend a lot of time building things in JavaScript, but I'm pretty flexible. I've lived in quite a few places, but right now I'm located in Ann Arbor, Michigan. If you're interested in tech, music, or theatre, let's chat!"
+      "My name is Eric Krawczyk, and I'm a software developer from Ann Arbor, Michigan. I like making web applications, and enjoy all layers of the stack. I spend a lot of time building things in JavaScript, but I'm pretty flexible. If you're interested in tech, music, or theatre, let's chat!"
     ]
   },
   {

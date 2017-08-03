@@ -1,21 +1,21 @@
-import React from 'react'
+import React     from 'react'
 import PropTypes from 'prop-types'
 
-import "./Titles.scss"
+import "./Title.scss"
 
-const Titles = ({ title, subtitle }) => {
+const Title = ({ title, subtitle }) => {
 
   return (
-    <div className="titles">
+    <div className="title">
       <h1>{title}</h1>
       {subtitle ? <h2>{subtitle}</h2> : null}
     </div>
   )
 }
 
-Titles.propTypes = {
+Title.propTypes = {
   title: PropTypes.string.isRequired,
   subtitle: PropTypes.string,
 }
 
-export default Titles;
+export default Title;

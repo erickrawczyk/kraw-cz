@@ -1,21 +1,16 @@
 @import "../../variables";
 
-.titles {
+.title {
   grid-column-start: 2;
   grid-column-end: -2;
   grid-row-start: 2;
   text-align: center;
 
-  h1, h2 {
-    font-weight: 300;
-  }
-
   h1 {
-    font-size: 5vmax;
-  }
-
-  h2 {
-    font-size: 3.5vmax;
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-size: 5.5vmax;
+    font-weight: 700;
   }
 
 }

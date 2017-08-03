@@ -1,19 +1,15 @@
-import React from 'react'
-
+import React  from 'react'
 // import NavBar from './NavBar'
-import Page from '../Page/Page'
-
-import STATE from '../../state.js'
+import Page   from '../Page/Page'
 import './App.scss';
 
-const [landingPage, ...pages] = STATE
-
-const App = () => (
-  <div>
-    {/* <NavBar /> */}
-    <Page {...landingPage} key="landing"/>
-    {pages.map((page, idx) => <Page {...page} idx={idx} key={page.name}/>)}
-  </div>
-)
+const App = ({ pages }) => {
+  return (
+    <div>
+      {/* <NavBar /> */}
+      {pages.map((page, idx) => <Page {...page} isFirst={idx === 0} isLast={idx === pages.length - 1} key={page.name}/>)}
+    </div>
+  )
+}
 
 export default App;

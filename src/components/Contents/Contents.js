@@ -1,10 +1,9 @@
-import React from 'react'
-import PropTypes from 'prop-types'
+import React     from 'react';
+import PropTypes from 'prop-types';
 
-import "./Contents.scss"
+import "./Contents.scss";
 
 const Contents = ({ contents }) => {
-  console.log('contents', contents);
 
   return (
     <div className="contents">
@@ -18,6 +17,7 @@ const Contents = ({ contents }) => {
     </div>
   )
 }
+
 
 Contents.propTypes = {
   contents: PropTypes.array.isRequired,
