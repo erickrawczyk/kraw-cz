@@ -12,7 +12,7 @@ const STATE = [
     backgroundPosition: 'center center',
     title: "Hey, I'm Eric!",
     contents: [
-      "My name is Eric Krawczyk, and I'm a software developer from Ann Arbor, Michigan. I like making web applications, and enjoy all layers of the stack. I spend a lot of time building things in JavaScript, but I'm pretty flexible. If you're interested in tech, music, or theatre, let's chat!"
+      "My name is Eric Krawczyk, and I'm a software developer from Ann Arbor, Michigan. I spend a lot of time building things in JavaScript, but I'm pretty flexible. I love making web applications from the ground up, and can jump into any layer of the stack. If you're interested in tech, music, or theatre, let's chat!"
     ]
   },
   {

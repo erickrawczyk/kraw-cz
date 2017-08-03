@@ -1,7 +1,8 @@
-import React     from 'react';
-import PropTypes from 'prop-types';
-import Contents  from '../Contents/Contents';
-import Title     from '../Title/Title';
+import React       from 'react';
+import PropTypes   from 'prop-types';
+import Contents    from '../Contents/Contents';
+import Heading     from '../Heading/Heading';
+import Title       from '../Title/Title';
 
 import "./Page.scss";
 
@@ -17,15 +18,17 @@ const Page = ({ name, title, backgroundImage, backgroundPosition, subtitle, cont
 
   return (
     <section id={name.toLowerCase()} className="page" style={style}>
-      <div className={isFirst ? 'grid' : 'grid overlay'}>
 
-        <Title title={title} subtitle={subtitle} isFirst={isFirst} />
+      <div className={isFirst ? 'grid darken' : 'grid gradient-overlay'}>
+
+        {isFirst ? <Title title={title} subtitle={subtitle}/> : <Heading title={title}/>}
 
         { contents && contents.length ? <Contents contents={contents} /> : null }
 
         <i aria-hidden="true" id={name.toLowerCase() + '-next-btn'} className={arrowClassName}></i>
 
       </div>
+
     </section>
   )
 }

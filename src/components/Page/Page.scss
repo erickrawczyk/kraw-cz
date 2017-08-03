@@ -16,8 +16,12 @@
     height: 100%;
     width: 100%;
 
-    &.overlay {
+    &.gradient-overlay {
       background: linear-gradient(rgba(1,1,1,0.3), rgba(1,1,1,0.8));
+    }
+
+    &.darken {
+      background: rgba(1,1,1,0.1);
     }
 
   }
