@@ -1,12 +1,14 @@
-import React       from 'react';
-import PropTypes   from 'prop-types';
-import Contents    from '../Contents/Contents';
-import Heading     from '../Heading/Heading';
-import Title       from '../Title/Title';
+import React         from 'react';
+import PropTypes     from 'prop-types';
+
+import Title         from '../Title/Title';
+import Heading       from '../Heading/Heading';
+import Contents      from '../Contents/Contents';
+import IconContainer from '../IconContainer/IconContainer';
 
 import "./Page.scss";
 
-const Page = ({ name, title, backgroundImage, backgroundPosition, subtitle, contents, iconRows, isFirst, isLast}) => {
+const Page = ({ name, title, backgroundImage, backgroundPosition, subtitle, contents, icons, isFirst, isLast}) => {
 
   const style = {
     backgroundImage: `url('img/${backgroundImage}.jpg')`,
@@ -23,7 +25,9 @@ const Page = ({ name, title, backgroundImage, backgroundPosition, subtitle, cont
 
         {isFirst ? <Title title={title} subtitle={subtitle}/> : <Heading title={title}/>}
 
-        { contents && contents.length ? <Contents contents={contents} /> : null }
+        {contents && contents.length ? <Contents contents={contents} /> : null}
+
+        {icons && icons.length ? <IconContainer icons={icons} /> : null}
 
         <i aria-hidden="true" id={name.toLowerCase() + '-next-btn'} className={arrowClassName}></i>
 

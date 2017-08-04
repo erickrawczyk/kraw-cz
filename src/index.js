@@ -5,6 +5,7 @@ import addSmoothScrolling    from './scroll/addSmoothScrolling';
 import state                 from './state.js'
 import App                   from './components/App/App';
 
+import 'react-tippy/dist/tippy.css';
 import './index.scss';
 
 render(

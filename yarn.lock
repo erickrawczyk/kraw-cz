@@ -4597,6 +4597,10 @@ pluralize@^1.2.1:
   version "1.2.1"
   resolved "https://registry.yarnpkg.com/pluralize/-/pluralize-1.2.1.tgz#d1a21483fd22bb41e58a12fa3421823140897c45"
 
+popper.js@^1.11.1:
+  version "1.11.1"
+  resolved "https://registry.yarnpkg.com/popper.js/-/popper.js-1.11.1.tgz#f5aca9a73bca1ce1fdbd9be8b1ba68677cbdd8e0"
+
 portfinder@^1.0.9:
   version "1.0.13"
   resolved "https://registry.yarnpkg.com/portfinder/-/portfinder-1.0.13.tgz#bb32ecd87c27104ae6ee44b5a3ccbf0ebb1aede9"
@@ -5084,6 +5088,12 @@ react-error-overlay@^1.0.9:
     react-dev-utils "^3.0.2"
     settle-promise "1.0.0"
     source-map "0.5.6"
+
+react-tippy@^1.2.1:
+  version "1.2.1"
+  resolved "https://registry.yarnpkg.com/react-tippy/-/react-tippy-1.2.1.tgz#50aa4caa3cac5e873238b0a99c5b15818d2f2ca8"
+  dependencies:
+    popper.js "^1.11.1"
 
 react@^15.6.1:
   version "15.6.1"
