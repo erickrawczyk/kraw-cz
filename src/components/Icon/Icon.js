@@ -9,7 +9,7 @@ const Icon = ({ icon, link, tooltip, idx }) => {
   const tooltipElm = (
     <div>
       <span>{tooltip}&nbsp;</span>
-      <a href={link} target="_blank" style={{color: 'white'}}>
+      <a href={link} target="_blank" rel="noopener noreferrer" style={{color: 'white'}}>
         <i className="fa fa-fw fa-external-link" aria-hidden="true"></i>
       </a>
     </div>

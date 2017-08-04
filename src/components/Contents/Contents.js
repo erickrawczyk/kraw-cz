@@ -8,12 +8,7 @@ const Contents = ({ contents }) => {
   return (
     <div className="contents">
       <hr />
-      {
-        // data is static so we can interpolate html strings safely
-        contents.map((content, idx) => {
-          return <p key={idx} dangerouslySetInnerHTML={{__html: content}}></p>
-        })
-      }
+      {contents.map((content, idx) => <div key={idx}>{content}</div>)}
     </div>
   )
 }
