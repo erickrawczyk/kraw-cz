@@ -1,0 +1,41 @@
+@import "../../variables";
+
+.page {
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  color: $white;
+  height: 100vh;
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(9, 1fr);
+    grid-gap: 1em;
+    height: 100%;
+    width: 100%;
+
+    &.gradient-overlay {
+      background: linear-gradient(rgba(1,1,1,0.3), rgba(1,1,1,0.8));
+    }
+
+    &.darken {
+      background: rgba(1,1,1,0.1);
+    }
+
+  }
+
+  a {
+    font-weight: 700;
+    color: $white;
+    text-decoration: none;
+  }
+
+  .next-btn {
+    text-align: center;
+    grid-row-start: 8;
+    grid-column-start: 4;
+  }
+
+}
