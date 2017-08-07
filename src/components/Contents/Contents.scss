@@ -1,0 +1,19 @@
+@import "../../variables";
+
+.contents {
+  grid-column-start: 2;
+  grid-column-end: -2;
+  grid-row-start: 3;
+  text-align: center;
+
+  hr, p {
+    font-size: 2.5vmax;
+    margin-bottom: 1em;
+    line-height: 1.25;
+
+    @media screen and (max-width: $break-large) {
+      font-size: 3vmax;
+    }
+  }
+
+}
