@@ -6,6 +6,8 @@ import state                 from './state.js'
 import App                   from './components/App/App';
 
 import 'react-tippy/dist/tippy.css';
+import 'devicon-2.2/devicon.min.css'
+
 import './index.scss';
 
 render(
