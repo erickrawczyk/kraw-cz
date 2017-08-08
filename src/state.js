@@ -71,30 +71,30 @@ const STATE = [
         tooltip: "React",
       },
       {
-        icon: "js",
-        link: "//javascript.com/",
-        tooltip: "JavaScript",
-      },
-      {
-        icon: "sass",
-        link: "//sass-lang.com/",
-        tooltip: "Sass",
-      },
-      {
-        icon: "node",
+        icon: "nodejs",
         link: "//nodejs.org/",
         tooltip: "Node.js",
       },
       {
-        icon: "angular",
+        icon: "angularjs",
         link: "//angularjs.org/",
         tooltip: "AngularJS",
       },
       {
-        icon: "postgres",
+        icon: "postgresql",
         link: "//www.postgresql.org/",
         tooltip: "PostgreSQL",
       },
+      {
+        icon: "docker",
+        link: "//www.docker.com/",
+        tooltip: "Docker",
+      },
+      {
+        icon: "amazonwebservices",
+        link: "//aws.amazon.com/",
+        tooltip: "AWS",
+      }
     ]
   },
   {
@@ -112,7 +112,7 @@ const STATE = [
         tooltip: "@erickrawczyk",
       },
       {
-        icon: "gmail",
+        icon: "google",
         link: "mailto:eric.krawczyk@gmail.com",
         tooltip: "eric.krawczyk@gmail.com",
       },

@@ -29,7 +29,7 @@ const Icon = ({ icon, link, tooltip, idx }) => {
     <div className="icon">
       <Tooltip {...tooltipConfig}>
         <div className="icon">
-          <img alt={icon} src={`/img/${icon}.png`}></img>
+          <i className={`devicon devicon-${icon}-plain`}></i>
         </div>
       </Tooltip>
     </div>
