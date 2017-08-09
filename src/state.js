@@ -15,9 +15,7 @@ const STATE = [
     title: "Hey, I'm Eric!",
     contents: [
       <p>
-        <i>
-          I'm a software developer from Ann Arbor, Michigan.
-        </i>
+        I'm a software developer from Ann Arbor, Michigan!
       </p>,
       <p>
         I spend a lot of time building things in JavaScript, but I'm pretty
