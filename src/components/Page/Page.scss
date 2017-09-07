@@ -8,6 +8,10 @@
   color: $white;
   height: 100vh;
 
+  @media screen and (max-width: $break-small) {
+    background-attachment: scroll;
+  }
+
   .grid {
     display: grid;
     grid-template-columns: repeat(7, 1fr);

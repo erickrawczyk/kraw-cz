@@ -11,7 +11,7 @@ import "./Page.scss";
 const Page = ({ name, title, backgroundImage, backgroundPosition, subtitle, contents, icons, isFirst, isLast}) => {
 
   const style = {
-    backgroundImage: `url('img/${backgroundImage}.jpg')`,
+    backgroundImage: `url('/img/${backgroundImage}.jpg')`,
     backgroundPosition: backgroundPosition || 'center center',
     borderBottom: isLast ? '' : '2px solid white'
   }
