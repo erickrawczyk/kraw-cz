@@ -40,7 +40,7 @@
     text-align: center;
     grid-row-start: 8;
     grid-column-start: 4;
-    @media screen and (orientation: landscape) {
+    @media screen and (orientation: landscape) and (max-width: $break-medium) {
       display: none;
     }
   }
