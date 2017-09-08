@@ -8,6 +8,10 @@
   color: $white;
   height: 100vh;
 
+  @media screen and (max-width: $break-small) {
+    background-attachment: scroll;
+  }
+
   .grid {
     display: grid;
     grid-template-columns: repeat(7, 1fr);
@@ -36,6 +40,9 @@
     text-align: center;
     grid-row-start: 8;
     grid-column-start: 4;
+    @media screen and (orientation: landscape) and (max-width: $break-medium) {
+      display: none;
+    }
   }
 
 }
