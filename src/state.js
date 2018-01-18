@@ -3,8 +3,8 @@ import React from 'react';
 const STATE = [
   {
     name: "Landing",
-    backgroundImage: "scotland",
-    backgroundPosition: '85% 50%',
+    backgroundImage: "central-park",
+    backgroundPosition: '75% 50%',
     title: "Eric Krawczyk",
     subtitle: "Full Stack Engineer"
   },
@@ -27,18 +27,18 @@ const STATE = [
   },
   {
     name: "Projects",
-    backgroundImage: "career-fair",
-    backgroundPosition: 'center center',
+    backgroundImage: "deepfield",
+    backgroundPosition: '25% 50%',
     title: "What I'm Up To",
     contents: [
       <p>
-        I'm currently Head of Engineering at&nbsp;
-        <a href="http://docnetwork.org" target="_blank" rel="noopener noreferrer">
-          DocNetwork
+        I'm currently building data visualizations and user interfaces at&nbsp;
+        <a href="http://deepfield.com" target="_blank" rel="noopener noreferrer">
+          Deepfield
            <i className="fa fa-fw fa-external-link" aria-hidden="true"></i>
         </a>,
-         an Ann Arbor startup trying to make collecting medical records
-         easy for nurses at summer camps, schools, and child care centers.
+        a Nokia subsidiary that provides real-time network performance and
+        security big data analytics for massive networks.
       </p>,
       <p>
         I'm also working on&nbsp;
