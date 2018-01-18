@@ -108,16 +108,19 @@ const STATE = [
         icon: "github",
         link: "//github.com/erickrawczyk/",
         tooltip: "@erickrawczyk",
+        direct: true,
       },
       {
         icon: "google",
         link: "mailto:eric.krawczyk@gmail.com",
         tooltip: "eric.krawczyk@gmail.com",
+        direct: true,
       },
       {
         icon: "linkedin",
-        link: "//www.linkedin.com/in/eric-krawczyk-055160b9",
+        link: "//www.linkedin.com/in/eric-krawczyk",
         tooltip: "@eric-krawczyk",
+        direct: true,
       },
     ]
 
