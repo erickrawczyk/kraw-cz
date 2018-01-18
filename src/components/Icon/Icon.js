@@ -42,7 +42,8 @@ Icon.propTypes = {
   icon: PropTypes.string.isRequired,
   link: PropTypes.string.isRequired,
   tooltip: PropTypes.string.isRequired,
-  idx: PropTypes.number.isRequired
+  idx: PropTypes.number.isRequired,
+  direct: PropTypes.bool,
 }
 
 export default Icon;
