@@ -10,8 +10,8 @@ const STATE = [
   },
   {
     name: "About",
-    backgroundImage: "emp-museum",
-    backgroundPosition: 'center center',
+    backgroundImage: "barcelona",
+    backgroundPosition: '25% 75%',
     title: "Hey, I'm Eric!",
     contents: [
       <p>
@@ -28,11 +28,11 @@ const STATE = [
   {
     name: "Projects",
     backgroundImage: "deepfield",
-    backgroundPosition: '25% 50%',
+    backgroundPosition: '20%',
     title: "What I'm Up To",
     contents: [
       <p>
-        I'm currently building data visualizations and user interfaces at&nbsp;
+        I'm currently building API's, data visualizations, and user interfaces at&nbsp;
         <a href="http://deepfield.com" target="_blank" rel="noopener noreferrer">
           Deepfield
            <i className="fa fa-fw fa-external-link" aria-hidden="true"></i>
@@ -108,16 +108,19 @@ const STATE = [
         icon: "github",
         link: "//github.com/erickrawczyk/",
         tooltip: "@erickrawczyk",
+        direct: true,
       },
       {
         icon: "google",
         link: "mailto:eric.krawczyk@gmail.com",
         tooltip: "eric.krawczyk@gmail.com",
+        direct: true,
       },
       {
         icon: "linkedin",
-        link: "//www.linkedin.com/in/eric-krawczyk-055160b9",
+        link: "//www.linkedin.com/in/eric-krawczyk",
         tooltip: "@eric-krawczyk",
+        direct: true,
       },
     ]
 

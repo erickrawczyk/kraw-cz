@@ -4,7 +4,7 @@ import { Tooltip } from 'react-tippy';
 
 import "./Icon.scss"
 
-const Icon = ({ icon, link, tooltip, idx }) => {
+const Icon = ({ icon, link, tooltip, direct, idx }) => {
 
   const tooltipElm = (
     <div>
@@ -29,7 +29,9 @@ const Icon = ({ icon, link, tooltip, idx }) => {
     <div className="icon">
       <Tooltip {...tooltipConfig}>
         <div className="icon">
-          <i className={`devicon devicon-${icon}-plain`}></i>
+          <a href={direct ? link : null} target="_blank" rel="noopener noreferrer" style={{color: 'white'}} >
+            <i className={`devicon devicon-${icon}-plain`}></i>
+          </a>
         </div>
       </Tooltip>
     </div>
@@ -40,7 +42,8 @@ Icon.propTypes = {
   icon: PropTypes.string.isRequired,
   link: PropTypes.string.isRequired,
   tooltip: PropTypes.string.isRequired,
-  idx: PropTypes.number.isRequired
+  idx: PropTypes.number.isRequired,
+  direct: PropTypes.bool,
 }
 
 export default Icon;
