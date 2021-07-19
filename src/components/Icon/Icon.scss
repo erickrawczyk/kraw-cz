@@ -3,14 +3,17 @@
 .icon {
   margin: auto;
 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
   .devicon {
     max-width: 100%;
     font-size: 8vmax;
   }
 
-  .ext-link {
-    font-weight: 700;
-    color: $white;
+  .label {
+    margin-top: 0.5em;
   }
 
 }

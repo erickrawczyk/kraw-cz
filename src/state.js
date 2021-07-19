@@ -29,26 +29,26 @@ const STATE = [
     title: "What I'm Up To",
     contents: [
       <p>
-        I'm currently building out Applications and Infrastructure at&nbsp;
-        <a href="https://skyspecs.com/" target="_blank" rel="noopener noreferrer">
-          SkySpecs
-          <i className="fa fa-fw fa-external-link" aria-hidden="true" />
+        I'm currently building out &nbsp;
+        <a href="https://joinpaladin.com/" target="_blank" rel="noopener noreferrer">
+          Paladin
         </a>
-        , a data and robotics startup that builds drones to inspect wind turbines, and software to
-        track damage in turbine fleets.
+        , a platform that connects people who need legal representation to pro-bono lawyers.
       </p>,
       <p>
         Previously, I've worked at&nbsp;
+        <a href="https://skyspecs.com/" target="_blank" rel="noopener noreferrer">
+          SkySpecs
+        </a>
+        , a renewable energy data and robotics startup,&nbsp;
         <a href="http://deepfield.com" target="_blank" rel="noopener noreferrer">
           Deepfield
-          <i className="fa fa-fw fa-external-link" aria-hidden="true" />
         </a>
         , a big data analytics platform for massive networks, and&nbsp;
         <a href="https://www.docnetwork.org/" target="_blank" rel="noopener noreferrer">
           DocNetwork
-          <i className="fa fa-fw fa-external-link" aria-hidden="true" />
         </a>
-        , an Electronic Health Record system for Schools and Summer Camps.
+        , an Electronic Health Record system for schools and summer camps.
       </p>,
     ],
   },
@@ -72,9 +72,9 @@ const STATE = [
         tooltip: 'Node.js',
       },
       {
-        icon: 'angularjs',
-        link: '//angularjs.org/',
-        tooltip: 'AngularJS',
+        icon: 'python',
+        link: '//python.org/',
+        tooltip: 'Python',
       },
       {
         icon: 'postgresql',
@@ -100,9 +100,8 @@ const STATE = [
     title: "Let's Talk",
     contents: [
       <p>
-        I always prefer real human conversation to internet snooping. If you want to know more about
-        web development, need someone for a project, or just want to talk, I'd love to hear from
-        you!
+        I always prefer real human connection. If you want to know more about web development, need
+        someone for a project, or just want to talk, I'd love to hear from you!
       </p>,
     ],
     icons: [

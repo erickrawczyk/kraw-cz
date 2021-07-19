@@ -1,17 +1,12 @@
-import React       from 'react';
-import PropTypes   from 'prop-types';
-import { Tooltip } from 'react-tippy';
+import React from 'react';
+import PropTypes from 'prop-types';
 
-import "./Icon.scss"
+import './Icon.scss';
 
-const Icon = ({ icon, link, tooltip, direct, idx }) => {
-
+const Icon = ({ icon, link, tooltip }) => {
   const tooltipElm = (
     <div>
       <span>{tooltip}&nbsp;</span>
-      <a href={link} target="_blank" rel="noopener noreferrer" style={{color: 'white'}}>
-        <i className="fa fa-fw fa-external-link" aria-hidden="true"></i>
-      </a>
     </div>
   );
 
@@ -22,21 +17,19 @@ const Icon = ({ icon, link, tooltip, direct, idx }) => {
     interactive: true,
     html: tooltipElm,
     hideDuration: '500ms',
-    theme: 'transparent'
-  }
+    theme: 'transparent',
+    position: 'top',
+  };
 
   return (
     <div className="icon">
-      <Tooltip {...tooltipConfig}>
-        <div className="icon">
-          <a href={direct ? link : null} target="_blank" rel="noopener noreferrer" style={{color: 'white'}} >
-            <i className={`devicon devicon-${icon}-plain`}></i>
-          </a>
-        </div>
-      </Tooltip>
+      <a href={link} target="_blank" rel="noopener noreferrer" style={{ color: 'white' }}>
+        <i className={`devicon devicon-${icon}-plain`}></i>
+      </a>
+      <b className="label">{tooltip}</b>
     </div>
-  )
-}
+  );
+};
 
 Icon.propTypes = {
   icon: PropTypes.string.isRequired,
@@ -44,6 +37,6 @@ Icon.propTypes = {
   tooltip: PropTypes.string.isRequired,
   idx: PropTypes.number.isRequired,
   direct: PropTypes.bool,
-}
+};
 
 export default Icon;
