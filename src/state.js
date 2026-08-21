@@ -3,20 +3,18 @@ import React from 'react';
 const STATE = [
   {
     name: 'Landing',
-    backgroundImage: 'central-park',
-    backgroundPosition: '75% 50%',
+    backgroundImage: 'wedding',
     title: 'Eric Krawczyk',
-    subtitle: 'Software Engineer',
+    subtitle: 'Software Product Technologist',
   },
   {
     name: 'About',
-    backgroundImage: 'barcelona',
-    backgroundPosition: '25% 75%',
+    backgroundImage: 'panel',
     title: "Hey, I'm Eric!",
     contents: [
-      <p>I'm a software developer from Detroit, Michigan!</p>,
+      <p>I'm a product technologist and software engineer currently based in Chicago, Illinois!</p>,
       <p>
-        I spend a lot of time building things in JavaScript, but I'm pretty flexible. I love making
+        I spend a lot of time building things in JavaScript and Python, but I'm pretty flexible. I love making
         web applications from the ground up, jumping into every layer of the stack. If you're
         interested in tech, music, or theatre, let's chat!
       </p>,
@@ -24,8 +22,7 @@ const STATE = [
   },
   {
     name: 'Projects',
-    backgroundImage: 'deepfield',
-    backgroundPosition: '20%',
+    backgroundImage: 'paladin',
     title: "What I'm Up To",
     contents: [
       <p>
@@ -54,8 +51,7 @@ const STATE = [
   },
   {
     name: 'Skills',
-    backgroundImage: 'nyc',
-    backgroundPosition: 'center center',
+    backgroundImage: 'conference',
     title: 'These Are My Tools',
     contents: [
       <p>I'm always learning new things, but here are the tools I'm most familiar with.</p>,
@@ -96,7 +92,6 @@ const STATE = [
   {
     name: 'Contact',
     backgroundImage: 'sword',
-    backgroundPosition: 'center center',
     title: "Let's Talk",
     contents: [
       <p>
@@ -113,7 +108,7 @@ const STATE = [
       },
       {
         icon: 'google',
-        link: 'mailto:eric.krawczyk@gmail.com',
+        link: 'mailto:eric.krawczyk+web@gmail.com',
         tooltip: 'eric.krawczyk@gmail.com',
         direct: true,
       },

@@ -1,7 +1,7 @@
 :root {
   --font-lato: 'Lato', 'Helvetica', sans-serif;
   --font-playfair: 'Playfair Display', serif;
-  --white: #fefefe;
+  --white: #ffffff;
 }
 
 /* Breakpoints (custom properties can't be used in media queries):
