@@ -59,11 +59,13 @@ equitable progress" (Paladin bio).
      schools & child care programs; AngularJS/Node/Express/AWS.
 
 5. **Portfolio — independent & contract work** (Aceternity hover-effect cards).
-   - **Deliver My Ride** (Sunset, 2017–2021) — Karmanos-backed online car buying &
+   Each card has an optional screenshot header: drop an image in `public/projects/`
+   and set `image: "/projects/<name>.png"` on the project in `src/data/content.tsx`.
+   - **Deliver My Ride** (2017–2021) — Karmanos-backed online car buying &
      home delivery for metro Detroit; 60+ dealerships; TechCrunch/Crain's coverage.
-   - **Jovono** (Live) — web home of Evan Zimmerman's venture firm (Anduril, Flexport,
+   - **Jovono** — web home of Evan Zimmerman's venture firm (Anduril, Flexport,
      DoNotPay); charter-forward brand site.
-   - **Spartanlist** (Sunset, college era) — campus classifieds marketplace for Michigan
+   - **Spartanlist** (college era) — campus classifieds marketplace for Michigan
      State students; the early lesson in build → launch → sunset.
    - **Side quests** row: Attention Ally (GPT + Calendar/Todoist focus assistant),
      AlphaSteg (encrypted files hidden in music streams), the CI-built résumé

@@ -4,35 +4,27 @@ import { HoverEffect, Card, type HoverCardItem } from "../ui/card-hover-effect";
 import { ExternalLinkIcon } from "../icons";
 import { contractProjects, sideProjects, type Project } from "../../data/content";
 
-function statusStyles(status: string): string {
-  switch (status) {
-    case "Sunset":
-      return "border-amber-400/25 bg-amber-400/10 text-amber-200";
-    case "Side project":
-      return "border-cyan-400/25 bg-cyan-400/10 text-cyan-200";
-    default:
-      return "border-emerald-400/25 bg-emerald-400/10 text-emerald-200";
-  }
-}
-
 function ProjectCard({ project }: { project: Project }) {
   return (
     <Card>
-      <div className="flex items-center justify-between gap-3">
-        <div className="flex items-center gap-2">
-          <span
-            className={`rounded-full border px-3 py-1 text-[11px] font-medium ${statusStyles(project.status)}`}
-          >
-            {project.status}
-          </span>
-          {project.period && (
-            <span className="font-mono text-[11px] text-zinc-600">{project.period}</span>
+      {project.image && (
+        <div className="-mx-5 -mt-5 mb-5 overflow-hidden border-b border-white/[0.06]">
+          <img
+            src={project.image}
+            alt={`${project.name} screenshot`}
+            loading="lazy"
+            className="aspect-video w-full object-cover object-top transition-transform duration-500 group-hover:scale-[1.03]"
+          />
+        </div>
+      )}
+      {(project.period || project.link) && (
+        <div className="flex items-center justify-between gap-3">
+          <span className="font-mono text-[11px] text-zinc-600">{project.period}</span>
+          {project.link && (
+            <ExternalLinkIcon className="h-4 w-4 text-zinc-600 transition-colors group-hover:text-indigo-300" />
           )}
         </div>
-        {project.link && (
-          <ExternalLinkIcon className="h-4 w-4 text-zinc-600 transition-colors group-hover:text-indigo-300" />
-        )}
-      </div>
+      )}
       <h3 className="mt-4 font-display text-xl font-semibold text-white">{project.name}</h3>
       <p className="mt-1 text-xs font-medium uppercase tracking-wider text-indigo-300/70">
         {project.role}
