@@ -134,7 +134,6 @@ module.exports = {
           /\.html$/,
           /\.(js|jsx)$/,
           /\.css$/,
-          /\.scss$/,
           /\.json$/,
           /\.bmp$/,
           /\.gif$/,
@@ -162,18 +161,6 @@ module.exports = {
         include: paths.appSrc,
         loader: require.resolve('babel-loader'),
 
-      },
-      // Process SCSS with node-sass
-      {
-        test: /\.scss$/,
-        include: paths.appSrc,
-        use: [{
-                loader: "style-loader" // creates style nodes from JS strings
-            }, {
-                loader: "css-loader" // translates CSS into CommonJS
-            }, {
-                loader: "sass-loader" // compiles Sass to CSS
-            }]
       },
       // The notation here is somewhat confusing.
       // "postcss" loader applies autoprefixer to our CSS.

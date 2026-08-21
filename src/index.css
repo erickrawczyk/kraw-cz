@@ -1,0 +1,24 @@
+:root {
+  --font-lato: 'Lato', 'Helvetica', sans-serif;
+  --font-playfair: 'Playfair Display', serif;
+  --white: #fefefe;
+}
+
+/* Breakpoints (custom properties can't be used in media queries):
+   large: 1000px, medium: 760px, small: 425px */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  width: 100%;
+  height: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-family: var(--font-lato);
+}

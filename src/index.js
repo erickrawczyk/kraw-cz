@@ -7,7 +7,7 @@ import App from './components/App/App';
 
 import 'devicon-2.2/devicon.min.css';
 
-import './index.scss';
+import './index.css';
 
 render(<App pages={state} />, document.getElementById('root'));
 

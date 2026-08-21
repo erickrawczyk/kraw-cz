@@ -1,0 +1,48 @@
+.page {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  color: var(--white);
+  height: 100vh;
+}
+
+@media screen and (max-width: 425px) {
+  .page {
+    background-attachment: scroll;
+  }
+}
+
+.page .grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-rows: repeat(9, 1fr);
+  grid-gap: 1em;
+  height: 100%;
+  width: 100%;
+}
+
+.page .grid.gradient-overlay {
+  background: linear-gradient(rgba(1,1,1,0.3), rgba(1,1,1,0.8));
+}
+
+.page .grid.darken {
+  background: rgba(1,1,1,0.1);
+}
+
+.page a {
+  font-weight: 700;
+  color: var(--white);
+  text-decoration: none;
+}
+
+.page .next-btn {
+  text-align: center;
+  grid-row-start: 8;
+  grid-column-start: 4;
+}
+
+@media screen and (orientation: landscape) and (max-width: 760px) {
+  .page .next-btn {
+    display: none;
+  }
+}

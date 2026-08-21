@@ -1,7 +1,7 @@
 import React     from 'react'
 import PropTypes from 'prop-types'
 
-import "./Heading.scss"
+import "./Heading.css"
 
 const Heading = ({ title }) => {
 

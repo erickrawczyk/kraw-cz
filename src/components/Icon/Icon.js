@@ -1,26 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import './Icon.scss';
+import './Icon.css';
 
 const Icon = ({ icon, link, tooltip }) => {
-  const tooltipElm = (
-    <div>
-      <span>{tooltip}&nbsp;</span>
-    </div>
-  );
-
-  const tooltipConfig = {
-    arrow: true,
-    arrowSize: 'big',
-    size: 'big',
-    interactive: true,
-    html: tooltipElm,
-    hideDuration: '500ms',
-    theme: 'transparent',
-    position: 'top',
-  };
-
   return (
     <div className="icon">
       <a href={link} target="_blank" rel="noopener noreferrer" style={{ color: 'white' }}>

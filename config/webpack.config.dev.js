@@ -137,7 +137,6 @@ module.exports = {
           /\.html$/,
           /\.(js|jsx)$/,
           /\.css$/,
-          /\.scss$/,
           /\.json$/,
           /\.bmp$/,
           /\.gif$/,
@@ -172,18 +171,6 @@ module.exports = {
           // directory for faster rebuilds.
           cacheDirectory: true,
         },
-      },
-      // Process SCSS with node-sass
-      {
-        test: /\.scss$/,
-        include: paths.appSrc,
-        use: [{
-                loader: "style-loader" // creates style nodes from JS strings
-            }, {
-                loader: "css-loader" // translates CSS into CommonJS
-            }, {
-                loader: "sass-loader" // compiles Sass to CSS
-            }]
       },
       // "postcss" loader applies autoprefixer to our CSS.
       // "css" loader resolves paths in CSS and adds assets as dependencies.

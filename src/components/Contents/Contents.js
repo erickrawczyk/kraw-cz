@@ -1,7 +1,7 @@
 import React     from 'react';
 import PropTypes from 'prop-types';
 
-import "./Contents.scss";
+import "./Contents.css";
 
 const Contents = ({ contents }) => {
 

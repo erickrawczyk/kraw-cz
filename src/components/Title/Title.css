@@ -1,0 +1,24 @@
+.title {
+  grid-column-start: 2;
+  grid-column-end: -2;
+  grid-row-start: 5;
+  text-align: center;
+}
+
+.title h1,
+.title hr {
+  margin-bottom: 1rem;
+}
+
+.title h1 {
+  font-family: var(--font-playfair);
+  font-style: italic;
+  font-size: 7vmax;
+  font-weight: 700;
+}
+
+.title h2 {
+  font-family: var(--font-lato);
+  font-size: 4vmax;
+  font-weight: 300;
+}

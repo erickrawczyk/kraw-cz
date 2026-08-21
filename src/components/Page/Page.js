@@ -6,7 +6,7 @@ import Heading       from '../Heading/Heading';
 import Contents      from '../Contents/Contents';
 import IconContainer from '../IconContainer/IconContainer';
 
-import "./Page.scss";
+import "./Page.css";
 
 const Page = ({ name, title, backgroundImage, backgroundPosition, subtitle, contents, icons, isFirst, isLast}) => {
 
