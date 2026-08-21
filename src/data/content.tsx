@@ -129,19 +129,20 @@ export const jobs: Job[] = [
 export interface Project {
   key: string;
   name: string;
-  status: string;
   period?: string;
   role: string;
   description: string;
   tags: string[];
   link?: string;
+  // Screenshot of the platform: drop a file in public/projects/ and set
+  // e.g. image: "/projects/jovono.png" — the card renders it as a header.
+  image?: string;
 }
 
 export const contractProjects: Project[] = [
   {
     key: "delivermyride",
     name: "Deliver My Ride",
-    status: "Sunset",
     period: "2017 – 2021",
     role: "Contract product engineering",
     description:
@@ -151,7 +152,6 @@ export const contractProjects: Project[] = [
   {
     key: "jovono",
     name: "Jovono",
-    status: "Live",
     role: "Contract design & build",
     description:
       "The web home of Jovono, Evan Zimmerman's venture firm backing missionary founders — a site built to carry a fourteen-point charter and a portfolio that includes Anduril, Flexport, and DoNotPay.",
@@ -161,7 +161,6 @@ export const contractProjects: Project[] = [
   {
     key: "spartanlist",
     name: "Spartanlist",
-    status: "Sunset",
     period: "College era",
     role: "Creator",
     description:
@@ -174,7 +173,6 @@ export const sideProjects: Project[] = [
   {
     key: "attention-ally",
     name: "Attention Ally",
-    status: "Side project",
     role: "Creator",
     description:
       "A GPT-powered assistant that keeps you focused by managing your Google Calendar and Todoist lists for you.",
@@ -184,7 +182,6 @@ export const sideProjects: Project[] = [
   {
     key: "alphasteg",
     name: "AlphaSteg",
-    status: "Side project",
     role: "Creator",
     description:
       "A steganography experiment that hides encrypted files inside music streams. Because sometimes the fun is in the hiding.",
@@ -194,7 +191,6 @@ export const sideProjects: Project[] = [
   {
     key: "resume",
     name: "CI-built résumé",
-    status: "Side project",
     role: "Creator",
     description:
       "This résumé builds itself: a React + Tailwind document that CircleCI renders to PDF and JPG with Puppeteer on every push.",
