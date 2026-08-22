@@ -82,7 +82,7 @@ export function Experience() {
       <SectionHeading
         eyebrow="Experience"
         title="A decade of building, in four acts"
-        description="Full-time roles where I've gone deep: legal tech, renewable energy, network analytics, and healthcare — each one a different stack, a different scale, and the same job of turning hard problems into products people rely on."
+        description="Full-time roles in legal tech, renewable energy, network analytics, and healthcare. The stack changes every time. The job stays the same: turn a hard problem into a product people rely on."
       />
       <div className="mt-4">
         <Timeline entries={entries} />

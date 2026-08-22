@@ -58,7 +58,7 @@ export function Portfolio() {
       <SectionHeading
         eyebrow="Portfolio"
         title="Independent & contract work"
-        description="Products I've built outside the day job — for founders, firms, and occasionally just for the fun of it."
+        description="Products I've built outside the day job, for founders, for firms, and sometimes just for fun."
       />
 
       <div className="mt-12">
@@ -77,7 +77,10 @@ export function Portfolio() {
           <div className="h-px flex-1 bg-gradient-to-r from-white/10 to-transparent" />
         </div>
         <div className="mt-4">
-          <HoverEffect items={toHoverItems(sideProjects)} />
+          <HoverEffect
+            items={toHoverItems(sideProjects)}
+            className="mx-auto max-w-3xl md:grid-cols-2 lg:grid-cols-2"
+          />
         </div>
       </motion.div>
     </section>

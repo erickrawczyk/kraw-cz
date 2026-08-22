@@ -26,8 +26,8 @@ equitable progress" (Paladin bio).
    - Status pill: Detroit, Michigan · VP Engineering @ Paladin (the one place the title
      leads, worn lightly as a status, not a headline)
    - H1: Eric Krawczyk → gradient subtitle: Product Technologist
-   - Generated-text tagline: "I build software products end to end — from first commit
-     to shipped platform, and the teams that keep them alive."
+   - Generated-text tagline: "I build software products end to end, from first commit
+     to shipped platform, along with the teams that keep them alive."
    - CTAs: "See the work" (#experience) · "Get in touch" (mailto) · social icons
 
 3. **About** — "Jack of all trades, master of some."
@@ -68,9 +68,8 @@ equitable progress" (Paladin bio).
    - **Spartan List** (c. 2018) — race finder for the Spartan Nomads obstacle-race
      community: search every Spartan race worldwide, scored on difficulty,
      landscape, and festival.
-   - **Side quests** row: Attention Ally (GPT + Calendar/Todoist focus assistant),
-     AlphaSteg (encrypted files hidden in music streams), the CI-built résumé
-     (React → PDF via CircleCI + Puppeteer).
+   - **Side quests** row: Define Queer (community definitions of the word queer) and
+     Argo Friend Date (blind friend dates by time slot, c. 2017).
 
 6. **How I work — Build · Scale · Lead** — the generalist's toolkit, three ways:
    0→1 product engineering; migrations/DevOps/performance; team building & technical
@@ -91,13 +90,18 @@ equitable progress" (Paladin bio).
   Space Grotesk for display, Inter for body, JetBrains Mono for meta text — all
   self-hosted via Fontsource.
 - Motion: spotlight sweep, staggered text generation, scroll-driven timeline beam,
-  whileInView reveals, shared-layout hover highlight on cards.
+  whileInView reveals, shared-layout hover highlight on cards. The nav stays visible
+  whenever the reader is below the hero.
+- Copy follows the blader/humanizer skill: no em dashes in prose, plain verbs,
+  no stock AI phrasing, and Eric's own recurring phrases kept intact.
 
 ## Fact-check flags
 
 - Spartan List is described from Eric's own screenshot of the product (the Spartan
   Nomads race finder). The spartanlist.com domain has since lapsed and been
-  re-registered — deliberately not linked.
+  re-registered, so the card has no link.
+- The Define Queer blurb is a best guess from the project's name. No public trace of
+  it survives, so Eric should check that description.
 - Education is intentionally omitted (résumé lists U-M CS as "pursued").
 - No FedRAMP or compliance certifications are claimed for Paladin publicly, so the
   site doesn't either.

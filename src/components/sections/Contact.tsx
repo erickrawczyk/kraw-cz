@@ -33,8 +33,8 @@ export function Contact() {
           transition={{ duration: 0.6, delay: 0.2 }}
           className="mx-auto mt-5 max-w-xl text-base leading-relaxed text-zinc-400"
         >
-          I always prefer real human connection. Whether you want to talk products, teams,
-          pro bono tech, or theatre — I'd love to hear from you.
+          I always prefer real human connection. If you want to talk products, teams,
+          pro bono tech, or theatre, I'd love to hear from you.
         </motion.p>
 
         <motion.div

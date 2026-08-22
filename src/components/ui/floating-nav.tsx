@@ -22,18 +22,12 @@ export function FloatingNav({
   className?: string;
   cta?: React.ReactNode;
 }) {
-  const { scrollYProgress } = useScroll();
+  const { scrollY } = useScroll();
   const [visible, setVisible] = useState(false);
 
-  useMotionValueEvent(scrollYProgress, "change", (current) => {
-    if (typeof current === "number") {
-      const direction = current - (scrollYProgress.getPrevious() ?? 0);
-      if (scrollYProgress.get() < 0.02) {
-        setVisible(false);
-      } else {
-        setVisible(direction < 0);
-      }
-    }
+  // Show the nav whenever the reader is past the hero, hide it on top of it.
+  useMotionValueEvent(scrollY, "change", (latest) => {
+    setVisible(latest > window.innerHeight * 0.6);
   });
 
   return (
