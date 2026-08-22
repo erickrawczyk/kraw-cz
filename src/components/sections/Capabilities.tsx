@@ -8,7 +8,7 @@ export function Capabilities() {
       <SectionHeading
         eyebrow="How I work"
         title="Build. Scale. Lead."
-        description="The generalist's toolkit, sharpened three ways."
+        description="What ten years of generalist work adds up to."
       />
 
       <div className="mt-14 grid gap-5 md:grid-cols-3">
