@@ -3,6 +3,7 @@ import { Spotlight } from "../ui/spotlight";
 import { TextGenerateEffect } from "../ui/text-generate-effect";
 import { GitHubIcon, LinkedInIcon, MailIcon, ArrowDownIcon, MapPinIcon } from "../icons";
 import { site } from "../../data/content";
+import ericPhoto from "../../assets/eric.jpg";
 
 export function Hero() {
   return (
@@ -14,11 +15,24 @@ export function Hero() {
       <Spotlight className="-top-40 left-0 md:-top-20 md:left-40" fill="#a5b4fc" />
       <Spotlight className="-top-10 left-full -translate-x-1/2" fill="#22d3ee" />
 
-      <div className="relative z-10 mx-auto max-w-4xl px-6 pb-24 pt-32 text-center">
+      <div className="relative z-10 mx-auto max-w-4xl px-6 pb-24 pt-28 text-center">
+        <motion.div
+          initial={{ opacity: 0, scale: 0.9 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.7 }}
+          className="mx-auto mb-7 w-fit rounded-full bg-gradient-to-br from-indigo-400 via-violet-400 to-cyan-400 p-[3px] shadow-[0_0_45px_rgba(129,140,248,0.3)]"
+        >
+          <img
+            src={ericPhoto}
+            alt="Eric Krawczyk"
+            className="h-28 w-28 rounded-full border-[5px] border-night-950 object-cover sm:h-32 sm:w-32"
+          />
+        </motion.div>
+
         <motion.div
           initial={{ opacity: 0, y: 16 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.7 }}
+          transition={{ duration: 0.7, delay: 0.05 }}
           className="mx-auto mb-8 flex w-fit items-center gap-2 rounded-full border border-white/10 bg-white/[0.04] px-4 py-1.5 text-xs text-zinc-300 backdrop-blur"
         >
           <MapPinIcon className="h-3.5 w-3.5 text-indigo-300" />

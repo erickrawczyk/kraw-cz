@@ -148,6 +148,7 @@ export const contractProjects: Project[] = [
     description:
       "A Karmanos-backed platform that let metro Detroiters buy or lease a new car entirely online — live inventory from 60+ dealerships, pre-negotiated pricing with taxes and fees included, and free delivery to your driveway. Covered by TechCrunch and Crain's.",
     tags: ["Automotive", "E-commerce", "Marketplace"],
+    image: "/projects/delivermyride.png",
   },
   {
     key: "jovono",
@@ -157,15 +158,17 @@ export const contractProjects: Project[] = [
       "The web home of Jovono, Evan Zimmerman's venture firm backing missionary founders — a site built to carry a fourteen-point charter and a portfolio that includes Anduril, Flexport, and DoNotPay.",
     tags: ["Venture capital", "Brand & web"],
     link: "https://www.jovono.com",
+    image: "/projects/jovono.jpg",
   },
   {
     key: "spartanlist",
-    name: "Spartanlist",
-    period: "College era",
-    role: "Creator",
+    name: "Spartan List",
+    period: "c. 2018",
+    role: "Contract design & build",
     description:
-      "A campus classifieds marketplace for Michigan State students — buy, sell, and trade inside the Spartan community instead of on Craigslist. An early lesson in building, launching, and sunsetting a real product.",
-    tags: ["Marketplace", "Early work"],
+      "A race finder built for the Spartan Nomads community — every Spartan obstacle race on Earth, searchable by continent, month, and race type, and scored on difficulty, landscape, and festival to help nomads plan their next trifecta.",
+    tags: ["Fitness community", "Search & discovery"],
+    image: "/projects/spartanlist.jpg",
   },
 ];
 

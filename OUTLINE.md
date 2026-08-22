@@ -65,8 +65,9 @@ equitable progress" (Paladin bio).
      home delivery for metro Detroit; 60+ dealerships; TechCrunch/Crain's coverage.
    - **Jovono** — web home of Evan Zimmerman's venture firm (Anduril, Flexport,
      DoNotPay); charter-forward brand site.
-   - **Spartanlist** (college era) — campus classifieds marketplace for Michigan
-     State students; the early lesson in build → launch → sunset.
+   - **Spartan List** (c. 2018) — race finder for the Spartan Nomads obstacle-race
+     community: search every Spartan race worldwide, scored on difficulty,
+     landscape, and festival.
    - **Side quests** row: Attention Ally (GPT + Calendar/Todoist focus assistant),
      AlphaSteg (encrypted files hidden in music streams), the CI-built résumé
      (React → PDF via CircleCI + Puppeteer).
@@ -94,9 +95,9 @@ equitable progress" (Paladin bio).
 
 ## Fact-check flags
 
-- Spartanlist copy is from memory: web.archive.org was unreachable from the build
-  environment, so the card sticks to the safe basics. The live spartanlist.com domain
-  belongs to an unrelated site today — deliberately not linked.
+- Spartan List is described from Eric's own screenshot of the product (the Spartan
+  Nomads race finder). The spartanlist.com domain has since lapsed and been
+  re-registered — deliberately not linked.
 - Education is intentionally omitted (résumé lists U-M CS as "pursued").
 - No FedRAMP or compliance certifications are claimed for Paladin publicly, so the
   site doesn't either.
