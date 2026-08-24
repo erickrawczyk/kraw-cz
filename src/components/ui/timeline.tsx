@@ -42,7 +42,7 @@ export function Timeline({ entries }: { entries: TimelineEntry[] }) {
         {entries.map((item) => (
           <div key={item.id} className="flex justify-start pt-12 md:gap-10 md:pt-24">
             <div className="sticky top-28 z-40 flex max-w-xs flex-col items-start self-start md:w-full md:flex-row lg:max-w-sm">
-              <div className="absolute -left-[3px] flex h-10 w-10 items-center justify-center rounded-full bg-night-950 md:left-[13px]">
+              <div className="absolute -left-[3px] flex h-10 w-10 items-center justify-center rounded-full bg-zinc-50 dark:bg-night-950 md:left-[13px]">
                 <div className="h-3.5 w-3.5 rounded-full border border-violet-300/50 bg-violet-400/20 shadow-[0_0_12px_rgba(167,139,250,0.35)]" />
               </div>
               <div className="hidden md:block md:pl-16">{item.title}</div>
@@ -55,7 +55,7 @@ export function Timeline({ entries }: { entries: TimelineEntry[] }) {
         ))}
         <div
           style={{ height: height + "px" }}
-          className="absolute left-[15px] top-0 w-[2px] overflow-hidden bg-gradient-to-b from-transparent via-zinc-800 to-transparent [mask-image:linear-gradient(to_bottom,transparent_0%,black_10%,black_90%,transparent_100%)] md:left-[31px]"
+          className="absolute left-[15px] top-0 w-[2px] overflow-hidden bg-gradient-to-b from-transparent via-zinc-300 to-transparent [mask-image:linear-gradient(to_bottom,transparent_0%,black_10%,black_90%,transparent_100%)] dark:via-zinc-800 md:left-[31px]"
         >
           <motion.div
             style={{ height: heightTransform, opacity: opacityTransform }}

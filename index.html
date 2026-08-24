@@ -1,7 +1,14 @@
 <!doctype html>
-<html lang="en" class="dark">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <script>
+      // Set theme before first paint to avoid a flash of the wrong mode.
+      const theme =
+        localStorage.getItem("theme") ??
+        (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+      if (theme === "dark") document.documentElement.classList.add("dark");
+    </script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Eric Krawczyk · Product Technologist</title>
     <meta

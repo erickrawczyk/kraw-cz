@@ -13,7 +13,7 @@ export function Contact() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="font-mono text-xs uppercase tracking-[0.3em] text-violet-300/80"
+          className="font-mono text-xs uppercase tracking-[0.3em] text-violet-600/90 dark:text-violet-300/80"
         >
           Contact
         </motion.p>
@@ -22,7 +22,7 @@ export function Contact() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6, delay: 0.1 }}
-          className="mt-4 font-display text-4xl font-semibold text-white sm:text-5xl"
+          className="mt-4 font-display text-4xl font-semibold text-zinc-900 dark:text-white sm:text-5xl"
         >
           Let's build something.
         </motion.h2>
@@ -31,7 +31,7 @@ export function Contact() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6, delay: 0.2 }}
-          className="mx-auto mt-5 max-w-xl text-base leading-relaxed text-zinc-400"
+          className="mx-auto mt-5 max-w-xl text-base leading-relaxed text-zinc-600 dark:text-zinc-400"
         >
           I always prefer real human connection. If you want to talk products, teams,
           pro bono tech, or theatre, I'd love to hear from you.
@@ -65,7 +65,7 @@ export function Contact() {
             target="_blank"
             rel="noopener noreferrer"
             aria-label="GitHub"
-            className="transition-colors hover:text-white"
+            className="transition-colors hover:text-zinc-900 dark:hover:text-white"
           >
             <GitHubIcon className="h-5 w-5" />
           </a>
@@ -74,14 +74,14 @@ export function Contact() {
             target="_blank"
             rel="noopener noreferrer"
             aria-label="LinkedIn"
-            className="transition-colors hover:text-white"
+            className="transition-colors hover:text-zinc-900 dark:hover:text-white"
           >
             <LinkedInIcon className="h-5 w-5" />
           </a>
         </motion.div>
       </div>
 
-      <footer className="relative mx-auto mt-24 flex max-w-6xl flex-col items-center justify-between gap-3 border-t border-white/[0.06] pt-8 text-xs text-zinc-600 sm:flex-row">
+      <footer className="relative mx-auto mt-24 flex max-w-6xl flex-col items-center justify-between gap-3 border-t border-zinc-200 pt-8 text-xs text-zinc-500 dark:border-white/[0.06] dark:text-zinc-600 sm:flex-row">
         <span>
           © {new Date().getFullYear()} Eric Krawczyk · {site.location}
         </span>
@@ -90,7 +90,7 @@ export function Contact() {
             href={site.links.keybase}
             target="_blank"
             rel="noopener noreferrer"
-            className="transition-colors hover:text-zinc-300"
+            className="transition-colors hover:text-zinc-900 dark:hover:text-zinc-300"
           >
             Keybase
           </a>
@@ -98,7 +98,7 @@ export function Contact() {
             href={site.links.resume}
             target="_blank"
             rel="noopener noreferrer"
-            className="transition-colors hover:text-zinc-300"
+            className="transition-colors hover:text-zinc-900 dark:hover:text-zinc-300"
           >
             Résumé
           </a>
@@ -106,7 +106,7 @@ export function Contact() {
             href="https://github.com/erickrawczyk/kraw-cz"
             target="_blank"
             rel="noopener noreferrer"
-            className="transition-colors hover:text-zinc-300"
+            className="transition-colors hover:text-zinc-900 dark:hover:text-zinc-300"
           >
             Source
           </a>

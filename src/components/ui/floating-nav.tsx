@@ -37,7 +37,7 @@ export function FloatingNav({
         animate={{ y: visible ? 0 : -100, opacity: visible ? 1 : 0 }}
         transition={{ duration: 0.2 }}
         className={cn(
-          "fixed inset-x-0 top-6 z-[5000] mx-auto flex w-fit max-w-[92vw] items-center gap-1 rounded-full border border-white/10 bg-night-900/80 py-2 pl-6 pr-2 shadow-[0px_2px_24px_-1px_rgba(0,0,0,0.6)] backdrop-blur-md",
+          "fixed inset-x-0 top-6 z-[5000] mx-auto flex w-fit max-w-[92vw] items-center gap-1 rounded-full border border-zinc-200 bg-white/80 py-2 pl-6 pr-2 shadow-[0px_2px_24px_-1px_rgba(0,0,0,0.12)] backdrop-blur-md dark:border-white/10 dark:bg-night-900/80 dark:shadow-[0px_2px_24px_-1px_rgba(0,0,0,0.6)]",
           className
         )}
       >
@@ -45,7 +45,7 @@ export function FloatingNav({
           <a
             key={`nav-${idx}`}
             href={navItem.link}
-            className="relative flex items-center gap-1 rounded-full px-3 py-1.5 text-sm text-zinc-300 transition-colors hover:text-white"
+            className="relative flex items-center gap-1 rounded-full px-3 py-1.5 text-sm text-zinc-600 transition-colors hover:text-zinc-900 dark:text-zinc-300 dark:hover:text-white"
           >
             {navItem.icon && <span className="block sm:hidden">{navItem.icon}</span>}
             <span className="hidden sm:block">{navItem.name}</span>

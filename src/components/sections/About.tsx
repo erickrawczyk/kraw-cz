@@ -13,7 +13,7 @@ export function About() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-80px" }}
           transition={{ duration: 0.6 }}
-          className="space-y-5 text-base leading-relaxed text-zinc-400 sm:text-lg"
+          className="space-y-5 text-base leading-relaxed text-zinc-600 dark:text-zinc-400 sm:text-lg"
         >
           {about.paragraphs.map((p, i) => (
             <p key={i}>{p}</p>
@@ -28,9 +28,11 @@ export function About() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-60px" }}
               transition={{ duration: 0.5, delay: i * 0.08 }}
-              className="rounded-2xl border border-white/[0.08] bg-night-900 p-5"
+              className="rounded-2xl border border-zinc-200 bg-white p-5 shadow-sm dark:border-white/[0.08] dark:bg-night-900 dark:shadow-none"
             >
-              <div className="font-display text-3xl font-semibold text-white">{stat.value}</div>
+              <div className="font-display text-3xl font-semibold text-zinc-900 dark:text-white">
+                {stat.value}
+              </div>
               <div className="mt-1 text-sm leading-snug text-zinc-500">{stat.label}</div>
             </motion.div>
           ))}
