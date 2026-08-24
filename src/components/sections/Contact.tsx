@@ -4,7 +4,7 @@ import { site } from "../../data/content";
 
 export function Contact() {
   return (
-    <section id="contact" className="relative overflow-hidden px-6 pb-12 pt-28 sm:pt-36">
+    <section id="contact" className="relative overflow-hidden px-6 pb-12 pt-14 sm:pt-20">
       <div className="pointer-events-none absolute inset-x-0 bottom-0 h-[420px] bg-[radial-gradient(ellipse_at_bottom,rgba(139,92,246,0.14),transparent_65%)]" />
 
       <div className="relative mx-auto max-w-3xl text-center">
@@ -45,7 +45,7 @@ export function Contact() {
           className="mt-9 flex flex-wrap items-center justify-center gap-4"
         >
           <a
-            href={`mailto:${site.email}`}
+            href={site.emailHref}
             className="inline-flex h-12 animate-shimmer items-center justify-center gap-2 rounded-full border border-white/15 bg-[linear-gradient(110deg,#150f22,45%,#38295c,55%,#150f22)] bg-[length:200%_100%] px-8 text-sm font-medium text-white transition-colors hover:border-white/30"
           >
             <MailIcon className="h-4 w-4" />

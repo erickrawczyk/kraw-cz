@@ -54,7 +54,7 @@ function toHoverItems(projects: Project[]): HoverCardItem[] {
 
 export function Portfolio() {
   return (
-    <section id="projects" className="relative mx-auto max-w-6xl px-6 py-28 sm:py-36">
+    <section id="projects" className="relative mx-auto max-w-6xl px-6 py-14 sm:py-20">
       <SectionHeading
         eyebrow="Portfolio"
         title="Independent & contract work"
@@ -73,7 +73,8 @@ export function Portfolio() {
         className="mt-16"
       >
         <div className="flex items-center gap-4">
-          <h3 className="font-display text-lg font-medium text-zinc-300">Side quests</h3>
+          <div className="h-px flex-1 bg-gradient-to-l from-white/10 to-transparent" />
+          <h3 className="font-display text-lg font-medium text-zinc-300">Side Quests</h3>
           <div className="h-px flex-1 bg-gradient-to-r from-white/10 to-transparent" />
         </div>
         <div className="mt-4">

@@ -43,7 +43,7 @@ export default function App() {
               <LinkedInIcon className="h-4 w-4" />
             </a>
             <a
-              href={`mailto:${site.email}`}
+              href={site.emailHref}
               className="ml-1 inline-flex items-center gap-2 rounded-full border border-violet-400/30 bg-violet-400/10 px-4 py-1.5 text-sm text-violet-100 transition-colors hover:bg-violet-400/20"
             >
               <MailIcon className="h-3.5 w-3.5" />

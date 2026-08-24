@@ -4,7 +4,7 @@ import { about } from "../../data/content";
 
 export function About() {
   return (
-    <section id="about" className="relative mx-auto max-w-6xl px-6 py-28 sm:py-36">
+    <section id="about" className="relative mx-auto max-w-6xl px-6 py-14 sm:py-20">
       <SectionHeading eyebrow="About" title={about.heading} />
 
       <div className="mt-14 grid gap-12 md:grid-cols-[3fr_2fr] md:gap-16">

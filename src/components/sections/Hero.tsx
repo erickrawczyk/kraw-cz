@@ -83,7 +83,7 @@ export function Hero() {
             See the work
           </a>
           <a
-            href={`mailto:${site.email}`}
+            href={site.emailHref}
             className="inline-flex h-12 items-center justify-center rounded-full border border-white/10 bg-white/[0.04] px-8 text-sm font-medium text-zinc-200 backdrop-blur transition-colors hover:bg-white/[0.1] hover:text-white"
           >
             Get in touch
@@ -115,7 +115,7 @@ export function Hero() {
             <LinkedInIcon className="h-5 w-5" />
           </a>
           <a
-            href={`mailto:${site.email}`}
+            href={site.emailHref}
             aria-label="Email"
             className="transition-colors hover:text-white"
           >
