@@ -145,7 +145,7 @@ export const contractProjects: Project[] = [
     key: "delivermyride",
     name: "Deliver My Ride",
     period: "2017 – 2021",
-    role: "Contract product engineering",
+    role: "Contract",
     description:
       "A Karmanos-backed platform that let metro Detroiters buy or lease a new car entirely online — live inventory from 60+ dealerships, pre-negotiated pricing with taxes and fees included, and free delivery to your driveway. Covered by TechCrunch and Crain's.",
     tags: ["Automotive", "E-commerce", "Marketplace", "Laravel / PHP"],
@@ -155,7 +155,7 @@ export const contractProjects: Project[] = [
     key: "jovono",
     name: "Jovono",
     period: "2019 - 2021",
-    role: "Contract design & build",
+    role: "Contract",
     description:
       "The web home of Jovono, Evan Zimmerman's venture firm backing missionary founders — a site built to carry a fourteen-point charter and a portfolio that includes Anduril, Flexport, and DoNotPay.",
     tags: ["Venture capital", "Brand & web", "React", "Airtable"],
@@ -166,7 +166,7 @@ export const contractProjects: Project[] = [
     key: "spartanlist",
     name: "Spartan List",
     period: "c. 2018",
-    role: "Contract design & build",
+    role: "Contract",
     description:
       "A race finder built for the Spartan Nomads community — every Spartan obstacle race on Earth, searchable by continent, month, and race type, and scored on difficulty, landscape, and festival to help nomads plan their next trifecta.",
     tags: ["Fitness community", "Search & discovery", "React"],
