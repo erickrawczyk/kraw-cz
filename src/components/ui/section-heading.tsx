@@ -20,7 +20,7 @@ export function SectionHeading({
       transition={{ duration: 0.6, ease: "easeOut" }}
       className={cn("mx-auto max-w-3xl text-center", className)}
     >
-      <p className="font-mono text-xs uppercase tracking-[0.3em] text-indigo-300/80">
+      <p className="font-mono text-xs uppercase tracking-[0.3em] text-violet-300/80">
         {eyebrow}
       </p>
       <h2 className="mt-4 font-display text-3xl font-semibold text-white sm:text-4xl md:text-5xl">

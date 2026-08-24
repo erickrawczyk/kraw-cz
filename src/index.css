@@ -16,7 +16,7 @@ body {
 }
 
 ::selection {
-  background: rgba(129, 140, 248, 0.35);
+  background: rgba(167, 139, 250, 0.35);
   color: #fff;
 }
 
@@ -29,7 +29,7 @@ body {
 }
 
 .text-gradient {
-  @apply bg-gradient-to-r from-indigo-300 via-white to-cyan-300 bg-clip-text text-transparent;
+  @apply bg-gradient-to-r from-violet-300 via-white to-cyan-300 bg-clip-text text-transparent;
 }
 
 /* Subtle scrollbar for the dark theme */
@@ -37,12 +37,12 @@ body {
   width: 10px;
 }
 ::-webkit-scrollbar-track {
-  background: #0a0a12;
+  background: #0c0a14;
 }
 ::-webkit-scrollbar-thumb {
-  background: #26263a;
+  background: #2d2544;
   border-radius: 8px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #33334d;
+  background: #3c3159;
 }

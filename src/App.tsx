@@ -44,7 +44,7 @@ export default function App() {
             </a>
             <a
               href={`mailto:${site.email}`}
-              className="ml-1 inline-flex items-center gap-2 rounded-full border border-indigo-400/30 bg-indigo-400/10 px-4 py-1.5 text-sm text-indigo-100 transition-colors hover:bg-indigo-400/20"
+              className="ml-1 inline-flex items-center gap-2 rounded-full border border-violet-400/30 bg-violet-400/10 px-4 py-1.5 text-sm text-violet-100 transition-colors hover:bg-violet-400/20"
             >
               <MailIcon className="h-3.5 w-3.5" />
               Say hi
@@ -54,9 +54,9 @@ export default function App() {
       />
       <Hero />
       <About />
+      <Capabilities />
       <Experience />
       <Portfolio />
-      <Capabilities />
       <Beyond />
       <Contact />
     </main>

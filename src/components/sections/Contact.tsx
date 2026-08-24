@@ -5,7 +5,7 @@ import { site } from "../../data/content";
 export function Contact() {
   return (
     <section id="contact" className="relative overflow-hidden px-6 pb-12 pt-28 sm:pt-36">
-      <div className="pointer-events-none absolute inset-x-0 bottom-0 h-[420px] bg-[radial-gradient(ellipse_at_bottom,rgba(99,102,241,0.14),transparent_65%)]" />
+      <div className="pointer-events-none absolute inset-x-0 bottom-0 h-[420px] bg-[radial-gradient(ellipse_at_bottom,rgba(139,92,246,0.14),transparent_65%)]" />
 
       <div className="relative mx-auto max-w-3xl text-center">
         <motion.p
@@ -13,7 +13,7 @@ export function Contact() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="font-mono text-xs uppercase tracking-[0.3em] text-indigo-300/80"
+          className="font-mono text-xs uppercase tracking-[0.3em] text-violet-300/80"
         >
           Contact
         </motion.p>
@@ -46,7 +46,7 @@ export function Contact() {
         >
           <a
             href={`mailto:${site.email}`}
-            className="inline-flex h-12 animate-shimmer items-center justify-center gap-2 rounded-full border border-white/15 bg-[linear-gradient(110deg,#101020,45%,#2b2b4a,55%,#101020)] bg-[length:200%_100%] px-8 text-sm font-medium text-white transition-colors hover:border-white/30"
+            className="inline-flex h-12 animate-shimmer items-center justify-center gap-2 rounded-full border border-white/15 bg-[linear-gradient(110deg,#150f22,45%,#38295c,55%,#150f22)] bg-[length:200%_100%] px-8 text-sm font-medium text-white transition-colors hover:border-white/30"
           >
             <MailIcon className="h-4 w-4" />
             {site.email}

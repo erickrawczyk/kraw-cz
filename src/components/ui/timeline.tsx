@@ -43,7 +43,7 @@ export function Timeline({ entries }: { entries: TimelineEntry[] }) {
           <div key={item.id} className="flex justify-start pt-12 md:gap-10 md:pt-24">
             <div className="sticky top-28 z-40 flex max-w-xs flex-col items-start self-start md:w-full md:flex-row lg:max-w-sm">
               <div className="absolute -left-[3px] flex h-10 w-10 items-center justify-center rounded-full bg-night-950 md:left-[13px]">
-                <div className="h-3.5 w-3.5 rounded-full border border-indigo-300/50 bg-indigo-400/20 shadow-[0_0_12px_rgba(129,140,248,0.35)]" />
+                <div className="h-3.5 w-3.5 rounded-full border border-violet-300/50 bg-violet-400/20 shadow-[0_0_12px_rgba(167,139,250,0.35)]" />
               </div>
               <div className="hidden md:block md:pl-16">{item.title}</div>
             </div>
@@ -59,7 +59,7 @@ export function Timeline({ entries }: { entries: TimelineEntry[] }) {
         >
           <motion.div
             style={{ height: heightTransform, opacity: opacityTransform }}
-            className="absolute inset-x-0 top-0 w-[2px] rounded-full bg-gradient-to-t from-indigo-500 via-cyan-400 to-transparent"
+            className="absolute inset-x-0 top-0 w-[2px] rounded-full bg-gradient-to-t from-violet-500 via-cyan-400 to-transparent"
           />
         </div>
       </div>

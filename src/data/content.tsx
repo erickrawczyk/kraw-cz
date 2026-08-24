@@ -1,7 +1,7 @@
 export const site = {
   name: "Eric Krawczyk",
   role: "Product Technologist",
-  location: "Detroit, Michigan",
+  location: "Chicago, IL",
   email: "eric.krawczyk@gmail.com",
   tagline:
     "I build software products end to end, from first commit to shipped platform, along with the teams that keep them alive.",
@@ -18,15 +18,15 @@ export const site = {
 export const about = {
   heading: "Jack of all trades, master of some.",
   paragraphs: [
-    "I'm a generalist who builds software products. The whole thing: shaping the problem with users, designing the system, shipping the interface, wiring the infrastructure, and tuning what happens after launch. I've spent ten years doing that at early and growth-stage B2B startups, where the job description is \"whatever the product needs next.\"",
-    "Right now I lead engineering at Paladin as VP of Engineering. We build the platform legal teams use to run their pro bono programs, software that turns goodwill into actual representation for people who need it. I still ship code most weeks. Leading the team goes better when I stay close to the product.",
+    "I'm a generalist who builds software products, everything from shaping the problem with users, designing the system, shipping the interface, wiring the infrastructure, and tuning what happens after launch. I've spent ten years doing that work with early and growth-stage B2B startups, where the job description is \"whatever the product needs next.\"",
+    "These days I lead engineering at Paladin as VP of Engineering, where we build the platform legal teams use to run pro bono programs and turns professional development into actual representation for people who need it. I still ship code most weeks; leading a team well and staying close to the product aren't opposites, they're the same job.",
     "I believe technology is essential for equitable progress, and I like working on things where the graph going up means someone's life got a little better.",
   ],
   stats: [
     { value: "10+", label: "years shipping B2B SaaS" },
     { value: "4", label: "industries, seed to Series C" },
-    { value: "0→1", label: "products taken from prototype to platform" },
-    { value: "1", label: "engineering team led & growing" },
+    { value: "5+", label: "products taken from prototype to platform" },
+    { value: "2", label: "engineering teams led & growing" },
   ],
 };
 
@@ -88,7 +88,7 @@ export const jobs: Job[] = [
       "Automated the CI/CD pipeline for stateless infrastructure with GitLab CI and Terraform, so a small team could deploy continuously.",
     ],
     tags: ["Node.js", "Microservices", "Terraform", "GitLab CI", "AWS"],
-    milestone: "Series C during tenure",
+    milestone: "Software + DevOps",
   },
   {
     id: "deepfield",
@@ -146,17 +146,18 @@ export const contractProjects: Project[] = [
     period: "2017 – 2021",
     role: "Contract product engineering",
     description:
-      "A Karmanos-backed platform that let metro Detroiters buy or lease a new car entirely online: live inventory from more than 60 dealerships, pre-negotiated prices with taxes and fees included, and free delivery to your driveway. TechCrunch and Crain's both covered it.",
-    tags: ["Automotive", "E-commerce", "Marketplace"],
+      "A Karmanos-backed platform that let metro Detroiters buy or lease a new car entirely online — live inventory from 60+ dealerships, pre-negotiated pricing with taxes and fees included, and free delivery to your driveway. Covered by TechCrunch and Crain's.",
+    tags: ["Automotive", "E-commerce", "Marketplace", "Laravel / PHP"],
     image: "/projects/delivermyride.png",
   },
   {
     key: "jovono",
     name: "Jovono",
+    period: "2019 - 2021",
     role: "Contract design & build",
     description:
-      "The web home of Jovono, Evan Zimmerman's venture firm that backs missionary founders. The site carries the fund's fourteen-point charter and a portfolio that includes Anduril, Flexport, and DoNotPay.",
-    tags: ["Venture capital", "Brand & web"],
+      "The web home of Jovono, Evan Zimmerman's venture firm backing missionary founders — a site built to carry a fourteen-point charter and a portfolio that includes Anduril, Flexport, and DoNotPay.",
+    tags: ["Venture capital", "Brand & web", "React", "Airtable"],
     link: "https://www.jovono.com",
     image: "/projects/jovono.jpg",
   },
@@ -166,8 +167,8 @@ export const contractProjects: Project[] = [
     period: "c. 2018",
     role: "Contract design & build",
     description:
-      "A race finder built for the Spartan Nomads community. Every Spartan obstacle race on Earth, searchable by continent, month, and race type, with scores for difficulty, landscape, and festival so nomads can plan their next trifecta.",
-    tags: ["Fitness community", "Search & discovery"],
+      "A race finder built for the Spartan Nomads community — every Spartan obstacle race on Earth, searchable by continent, month, and race type, and scored on difficulty, landscape, and festival to help nomads plan their next trifecta.",
+    tags: ["Fitness community", "Search & discovery", "React"],
     image: "/projects/spartanlist.jpg",
   },
 ];
@@ -175,20 +176,30 @@ export const contractProjects: Project[] = [
 export const sideProjects: Project[] = [
   {
     key: "definequeer",
-    name: "Define Queer",
-    role: "Creator",
+    name: "Define Queer Project",
+    period: "2018 — 2022",
+    role: "Cofounder",
     description:
-      "A community project collecting personal definitions of the word queer, because no dictionary entry was ever going to hold all of them.",
-    tags: ["Community", "LGBTQ+"],
+      "A community storytelling project collecting and sharing what \"queer\" means to the people who live it — one definition at a time.",
+    tags: ["Community", "Storytelling", "LGBTQ+"],
   },
   {
     key: "argofrienddate",
     name: "Argo Friend Date",
-    period: "c. 2017",
-    role: "Co-creator",
+    period: "2015 — 2018",
+    role: "Tech Lead",
     description:
-      "An app for meeting new people. Sign up for a time slot and get set up on a blind friend date with another cool human.",
-    tags: ["Social", "Matchmaking"],
+      "A full-stack web app for making friends as an adult: matching people into low-stakes platonic friend dates instead of leaving new connections to chance.",
+    tags: ["Full-stack", "Matchmaking", "Web app"],
+  },
+  {
+    key: "resume",
+    name: "CI-built résumé",
+    role: "Creator",
+    description:
+      "This résumé builds itself: a React + Tailwind document that CircleCI renders to PDF and JPG with Puppeteer on every push.",
+    tags: ["React", "CircleCI", "Puppeteer"],
+    link: "https://github.com/erickrawczyk/resume",
   },
 ];
 
@@ -224,17 +235,26 @@ export const beyond = {
     {
       key: "313cc",
       title: "313 Care Collective",
+      link: "https://313cc.org",
       role: "First responder & instructor",
       description:
-        "A community health organization in Detroit: first aid, training, supplies, and logistical support for local political action.",
+        "Community health organization providing first aid, training, supplies, and logistical support for local political action in Detroit, MI.",
+    },
+    {
+      key: "fourlakes",
+      title: "Four Lakes Action Medics",
+      role: "First responder",
+      description:
+        "Street medic collective providing first aid and medical support for community events and political action around Madison, WI.",
     },
     {
       key: "syncytium",
       title: "Syncytium Arts",
-      role: "Artist, fabricator & director of hospitality",
+      link: "https://syncytium.org",
+      role: "Artist, fabricator & bar lead",
       description:
-        "An artist collective that builds immersive installations for ephemeral events around Ann Arbor and Detroit.",
+        "An artist collective rooted in Michigan that builds immersive installations for Burning Man and art events across the country.",
     },
   ],
-  extras: "Otherwise: theatre, live music, biking, hiking, and dogs. Always dogs.",
+  extras: "Otherwise: theatre, live music, biking, hiking, off-grid power and comms, and dogs. Always dogs.",
 };
