@@ -12,7 +12,7 @@ export function Hero() {
       className="relative flex min-h-screen w-full items-center justify-center overflow-hidden"
     >
       <div className="bg-grid absolute inset-0 [mask-image:radial-gradient(ellipse_at_center,black_35%,transparent_78%)]" />
-      <Spotlight className="-top-40 left-0 md:-top-20 md:left-40" fill="#a5b4fc" />
+      <Spotlight className="-top-40 left-0 md:-top-20 md:left-40" fill="#c4b5fd" />
       <Spotlight className="-top-10 left-full -translate-x-1/2" fill="#22d3ee" />
 
       <div className="relative z-10 mx-auto max-w-4xl px-6 pb-24 pt-28 text-center">
@@ -20,7 +20,7 @@ export function Hero() {
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.7 }}
-          className="mx-auto mb-7 w-fit rounded-full bg-gradient-to-br from-indigo-400 via-violet-400 to-cyan-400 p-[3px] shadow-[0_0_45px_rgba(129,140,248,0.3)]"
+          className="mx-auto mb-7 w-fit rounded-full bg-gradient-to-br from-violet-400 via-purple-400 to-cyan-400 p-[3px] shadow-[0_0_45px_rgba(167,139,250,0.3)]"
         >
           <img
             src={ericPhoto}
@@ -35,7 +35,7 @@ export function Hero() {
           transition={{ duration: 0.7, delay: 0.05 }}
           className="mx-auto mb-8 flex w-fit items-center gap-2 rounded-full border border-white/10 bg-white/[0.04] px-4 py-1.5 text-xs text-zinc-300 backdrop-blur"
         >
-          <MapPinIcon className="h-3.5 w-3.5 text-indigo-300" />
+          <MapPinIcon className="h-3.5 w-3.5 text-violet-300" />
           {site.location}
           <span className="mx-1 h-3 w-px bg-white/15" />
           <span className="flex items-center gap-1.5">
@@ -78,7 +78,7 @@ export function Hero() {
         >
           <a
             href="#experience"
-            className="inline-flex h-12 animate-shimmer items-center justify-center rounded-full border border-white/15 bg-[linear-gradient(110deg,#101020,45%,#2b2b4a,55%,#101020)] bg-[length:200%_100%] px-8 text-sm font-medium text-white transition-colors hover:border-white/30 focus:outline-none focus:ring-2 focus:ring-indigo-400/50"
+            className="inline-flex h-12 animate-shimmer items-center justify-center rounded-full border border-white/15 bg-[linear-gradient(110deg,#150f22,45%,#38295c,55%,#150f22)] bg-[length:200%_100%] px-8 text-sm font-medium text-white transition-colors hover:border-white/30 focus:outline-none focus:ring-2 focus:ring-violet-400/50"
           >
             See the work
           </a>

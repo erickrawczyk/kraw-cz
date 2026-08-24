@@ -21,12 +21,12 @@ function ProjectCard({ project }: { project: Project }) {
         <div className="flex items-center justify-between gap-3">
           <span className="font-mono text-[11px] text-zinc-600">{project.period}</span>
           {project.link && (
-            <ExternalLinkIcon className="h-4 w-4 text-zinc-600 transition-colors group-hover:text-indigo-300" />
+            <ExternalLinkIcon className="h-4 w-4 text-zinc-600 transition-colors group-hover:text-violet-300" />
           )}
         </div>
       )}
       <h3 className="mt-4 font-display text-xl font-semibold text-white">{project.name}</h3>
-      <p className="mt-1 text-xs font-medium uppercase tracking-wider text-indigo-300/70">
+      <p className="mt-1 text-xs font-medium uppercase tracking-wider text-violet-300/70">
         {project.role}
       </p>
       <p className="mt-3 flex-1 text-sm leading-relaxed text-zinc-400">{project.description}</p>
