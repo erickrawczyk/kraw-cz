@@ -16,27 +16,29 @@ export function Beyond() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-60px" }}
             transition={{ duration: 0.55, delay: i * 0.12 }}
-            className="rounded-2xl border border-white/[0.08] bg-night-900 p-7"
+            className="rounded-2xl border border-zinc-200 bg-white p-7 shadow-sm dark:border-white/[0.08] dark:bg-night-900 dark:shadow-none"
           >
-            <h3 className="font-display text-xl font-semibold text-white">
+            <h3 className="font-display text-xl font-semibold text-zinc-900 dark:text-white">
               {item.link ? (
                 <a
                   href={item.link}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="group inline-flex items-center gap-2 transition-colors hover:text-violet-200"
+                  className="group inline-flex items-center gap-2 transition-colors hover:text-violet-600 dark:hover:text-violet-200"
                 >
                   {item.title}
-                  <ExternalLinkIcon className="h-3.5 w-3.5 text-zinc-600 transition-colors group-hover:text-violet-300" />
+                  <ExternalLinkIcon className="h-3.5 w-3.5 text-zinc-400 transition-colors group-hover:text-violet-500 dark:text-zinc-600 dark:group-hover:text-violet-300" />
                 </a>
               ) : (
                 item.title
               )}
             </h3>
-            <p className="mt-1 text-xs font-medium uppercase tracking-wider text-cyan-300/70">
+            <p className="mt-1 text-xs font-medium uppercase tracking-wider text-cyan-700/80 dark:text-cyan-300/70">
               {item.role}
             </p>
-            <p className="mt-3 text-sm leading-relaxed text-zinc-400">{item.description}</p>
+            <p className="mt-3 text-sm leading-relaxed text-zinc-600 dark:text-zinc-400">
+              {item.description}
+            </p>
           </motion.div>
         ))}
       </div>
