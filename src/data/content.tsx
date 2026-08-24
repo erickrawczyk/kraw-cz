@@ -3,6 +3,7 @@ export const site = {
   role: "Product Technologist",
   location: "Chicago, IL",
   email: "eric.krawczyk@gmail.com",
+  emailHref: "mailto:eric.krawczyk+web@gmail.com",
   tagline:
     "I build software products end to end, from first commit to shipped platform, along with the teams that keep them alive.",
   intro:
@@ -58,7 +59,7 @@ export const jobs: Job[] = [
     mission:
       "Justice tech. Paladin helps the world's biggest law firms, corporate legal teams, and law schools run efficient pro bono programs, so more people who can't afford a lawyer get one.",
     roles: [
-      { title: "VP, Engineering", period: "2024 —" },
+      { title: "VP, Engineering", period: "2024 — Present" },
       { title: "Lead Product Engineer", period: "2022 — 2024" },
       { title: "Senior Software Engineer", period: "2021 — 2022" },
     ],
@@ -118,7 +119,7 @@ export const jobs: Job[] = [
       { title: "Software Developer", period: "2014 — 2016" },
     ],
     bullets: [
-      "Joined early, then led a team of six engineers as the EHR grew past a thousand camps, schools, and child care programs.",
+      "Joined early as third engineer, then led a team of six engineers as the EHR grew past a thousand camps, schools, and child care programs.",
       "Built across the whole product, from the AngularJS front end through the Node.js and Express APIs to the AWS infrastructure underneath.",
     ],
     tags: ["AngularJS", "Node.js", "Express", "PostgreSQL", "AWS"],
@@ -182,6 +183,7 @@ export const sideProjects: Project[] = [
     description:
       "A community storytelling project collecting and sharing what \"queer\" means to the people who live it — one definition at a time.",
     tags: ["Community", "Storytelling", "LGBTQ+"],
+    image: "/projects/define-queer.png",
   },
   {
     key: "argofrienddate",
@@ -191,16 +193,8 @@ export const sideProjects: Project[] = [
     description:
       "A full-stack web app for making friends as an adult: matching people into low-stakes platonic friend dates instead of leaving new connections to chance.",
     tags: ["Full-stack", "Matchmaking", "Web app"],
-  },
-  {
-    key: "resume",
-    name: "CI-built résumé",
-    role: "Creator",
-    description:
-      "This résumé builds itself: a React + Tailwind document that CircleCI renders to PDF and JPG with Puppeteer on every push.",
-    tags: ["React", "CircleCI", "Puppeteer"],
-    link: "https://github.com/erickrawczyk/resume",
-  },
+    image: "/projects/argo.png",
+  }
 ];
 
 export const capabilities = [
@@ -230,7 +224,7 @@ export const capabilities = [
 export const beyond = {
   heading: "Beyond the keyboard",
   blurb:
-    "The common thread is community. I like building things people gather around, on screen and off.",
+    "I like building things people gather around, on screen and off. The common thread is community.",
   items: [
     {
       key: "313cc",

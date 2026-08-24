@@ -4,7 +4,7 @@ import { capabilities } from "../../data/content";
 
 export function Capabilities() {
   return (
-    <section id="capabilities" className="relative mx-auto max-w-6xl px-6 py-28 sm:py-36">
+    <section id="capabilities" className="relative mx-auto max-w-6xl px-6 py-14 sm:py-20">
       <SectionHeading
         eyebrow="How I work"
         title="Build. Scale. Lead."

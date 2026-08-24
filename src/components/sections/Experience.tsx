@@ -78,7 +78,7 @@ export function Experience() {
   }));
 
   return (
-    <section id="experience" className="relative px-6 py-28 sm:py-36">
+    <section id="experience" className="relative px-6 py-14 sm:py-20">
       <SectionHeading
         eyebrow="Experience"
         title="A decade of building, in four acts"

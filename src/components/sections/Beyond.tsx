@@ -5,7 +5,7 @@ import { beyond } from "../../data/content";
 
 export function Beyond() {
   return (
-    <section id="beyond" className="relative mx-auto max-w-6xl px-6 py-28 sm:py-36">
+    <section id="beyond" className="relative mx-auto max-w-6xl px-6 py-14 sm:py-20">
       <SectionHeading eyebrow="Off hours" title={beyond.heading} description={beyond.blurb} />
 
       <div className="mt-12 grid gap-5 md:grid-cols-3">
