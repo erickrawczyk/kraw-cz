@@ -144,7 +144,7 @@ export const contractProjects: Project[] = [
   {
     key: "delivermyride",
     name: "Deliver My Ride",
-    period: "2017 – 2021",
+    period: "2018",
     role: "Contract",
     description:
       "A Karmanos-backed platform that let metro Detroiters buy or lease a new car entirely online — live inventory from 60+ dealerships, pre-negotiated pricing with taxes and fees included, and free delivery to your driveway. Covered by TechCrunch and Crain's.",
@@ -152,9 +152,19 @@ export const contractProjects: Project[] = [
     image: "/projects/delivermyride.png",
   },
   {
+    key: "spartanlist",
+    name: "Spartan List",
+    period: "2018",
+    role: "Contract",
+    description:
+      "A race finder built for the Spartan Nomads community — every Spartan obstacle race on Earth, searchable by continent, month, and race type, and scored on difficulty, landscape, and festival to help nomads plan their next trifecta.",
+    tags: ["Fitness community", "Search & discovery", "React"],
+    image: "/projects/spartanlist.jpg",
+  },
+    {
     key: "jovono",
     name: "Jovono",
-    period: "2019 - 2021",
+    period: "2019",
     role: "Contract",
     description:
       "The web home of Jovono, Evan Zimmerman's venture firm backing missionary founders — a site built to carry a fourteen-point charter and a portfolio that includes Anduril, Flexport, and DoNotPay.",
@@ -162,23 +172,13 @@ export const contractProjects: Project[] = [
     link: "https://www.jovono.com",
     image: "/projects/jovono.jpg",
   },
-  {
-    key: "spartanlist",
-    name: "Spartan List",
-    period: "c. 2018",
-    role: "Contract",
-    description:
-      "A race finder built for the Spartan Nomads community — every Spartan obstacle race on Earth, searchable by continent, month, and race type, and scored on difficulty, landscape, and festival to help nomads plan their next trifecta.",
-    tags: ["Fitness community", "Search & discovery", "React"],
-    image: "/projects/spartanlist.jpg",
-  },
 ];
 
 export const sideProjects: Project[] = [
   {
     key: "definequeer",
     name: "Define Queer Project",
-    period: "2018 — 2022",
+    period: "2018 — 2020",
     role: "Cofounder",
     description:
       "A community storytelling project collecting and sharing what \"queer\" means to the people who live it — one definition at a time.",
