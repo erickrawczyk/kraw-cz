@@ -7,7 +7,7 @@ import { jobs, type Job } from "../../data/content";
 function EntryTitle({ job }: { job: Job }) {
   return (
     <div>
-      <div className="font-mono text-xs uppercase tracking-widest text-zinc-500">{job.years}</div>
+      <div className="font-mono text-xs uppercase tracking-widest text-cyan-700/80 dark:text-cyan-300/70">{job.years}</div>
       <a
         href={job.url}
         target="_blank"

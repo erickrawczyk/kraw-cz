@@ -22,7 +22,7 @@ export function Contact() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6, delay: 0.1 }}
-          className="mt-4 font-display text-4xl font-semibold text-zinc-900 dark:text-white sm:text-5xl"
+          className="text-gradient mt-4 font-display text-4xl font-semibold sm:text-5xl"
         >
           Let's build something.
         </motion.h2>
@@ -65,7 +65,7 @@ export function Contact() {
             target="_blank"
             rel="noopener noreferrer"
             aria-label="GitHub"
-            className="transition-colors hover:text-zinc-900 dark:hover:text-white"
+            className="transition-colors hover:text-violet-600 dark:hover:text-violet-300"
           >
             <GitHubIcon className="h-5 w-5" />
           </a>
@@ -74,7 +74,7 @@ export function Contact() {
             target="_blank"
             rel="noopener noreferrer"
             aria-label="LinkedIn"
-            className="transition-colors hover:text-zinc-900 dark:hover:text-white"
+            className="transition-colors hover:text-violet-600 dark:hover:text-violet-300"
           >
             <LinkedInIcon className="h-5 w-5" />
           </a>

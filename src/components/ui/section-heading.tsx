@@ -26,6 +26,7 @@ export function SectionHeading({
       <h2 className="mt-4 font-display text-3xl font-semibold text-zinc-900 dark:text-white sm:text-4xl md:text-5xl">
         {title}
       </h2>
+      <div className="mx-auto mt-5 h-1 w-16 rounded-full bg-gradient-to-r from-violet-500 to-cyan-400" />
       {description && (
         <p className="mt-5 text-base leading-relaxed text-zinc-600 dark:text-zinc-400 sm:text-lg">
           {description}

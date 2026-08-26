@@ -30,7 +30,7 @@ export function About() {
               transition={{ duration: 0.5, delay: i * 0.08 }}
               className="rounded-2xl border border-zinc-200 bg-white p-5 shadow-sm dark:border-white/[0.08] dark:bg-night-900 dark:shadow-none"
             >
-              <div className="font-display text-3xl font-semibold text-zinc-900 dark:text-white">
+              <div className="bg-gradient-to-r from-violet-600 to-cyan-600 bg-clip-text font-display text-3xl font-semibold text-transparent dark:from-violet-300 dark:to-cyan-300">
                 {stat.value}
               </div>
               <div className="mt-1 text-sm leading-snug text-zinc-500">{stat.label}</div>

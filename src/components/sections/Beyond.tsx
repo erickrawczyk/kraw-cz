@@ -16,7 +16,7 @@ export function Beyond() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-60px" }}
             transition={{ duration: 0.55, delay: i * 0.12 }}
-            className="rounded-2xl border border-zinc-200 bg-white p-7 shadow-sm dark:border-white/[0.08] dark:bg-night-900 dark:shadow-none"
+            className="rounded-2xl border border-zinc-200 bg-white p-7 shadow-sm transition-colors hover:border-cyan-400/50 dark:border-white/[0.08] dark:bg-night-900 dark:shadow-none dark:hover:border-cyan-400/30"
           >
             <h3 className="font-display text-xl font-semibold text-zinc-900 dark:text-white">
               {item.link ? (

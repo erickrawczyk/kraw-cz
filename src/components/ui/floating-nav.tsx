@@ -45,7 +45,7 @@ export function FloatingNav({
           <a
             key={`nav-${idx}`}
             href={navItem.link}
-            className="relative flex items-center gap-1 rounded-full px-3 py-1.5 text-sm text-zinc-600 transition-colors hover:text-zinc-900 dark:text-zinc-300 dark:hover:text-white"
+            className="relative flex items-center gap-1 rounded-full px-3 py-1.5 text-sm text-zinc-600 transition-colors hover:text-violet-600 dark:text-zinc-300 dark:hover:text-violet-300"
           >
             {navItem.icon && <span className="block sm:hidden">{navItem.icon}</span>}
             <span className="hidden sm:block">{navItem.name}</span>
