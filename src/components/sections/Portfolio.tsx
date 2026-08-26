@@ -8,7 +8,7 @@ function ProjectCard({ project }: { project: Project }) {
   return (
     <Card>
       {project.image && (
-        <div className="-mx-5 -mt-5 mb-5 overflow-hidden border-b border-zinc-200 dark:border-white/[0.06]">
+        <div className="-mx-5 -mt-5 mb-5 overflow-hidden rounded-t-xl border-b border-zinc-200 dark:border-white/[0.06]">
           <img
             src={project.image}
             alt={`${project.name} screenshot`}
