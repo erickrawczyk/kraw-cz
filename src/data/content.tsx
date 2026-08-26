@@ -149,7 +149,7 @@ export const contractProjects: Project[] = [
     description:
       "A Karmanos-backed platform that let metro Detroiters buy or lease a new car entirely online — live inventory from 60+ dealerships, pre-negotiated pricing with taxes and fees included, and free delivery to your driveway. Covered by TechCrunch and Crain's.",
     tags: ["Automotive", "E-commerce", "Marketplace", "Laravel / PHP"],
-    image: "/projects/delivermyride.png",
+    image: "/projects/delivermyride.jpg",
   },
   {
     key: "spartanlist",
