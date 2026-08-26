@@ -13,7 +13,7 @@ function ProjectCard({ project }: { project: Project }) {
             src={project.image}
             alt={`${project.name} screenshot`}
             loading="lazy"
-            className="aspect-video w-full object-cover object-top transition-transform duration-500 group-hover:scale-[1.03]"
+            className="aspect-video w-full object-cover object-top transition-transform duration-500 group-hover:scale-[1.03] motion-reduce:transition-none motion-reduce:group-hover:scale-100"
           />
         </div>
       )}

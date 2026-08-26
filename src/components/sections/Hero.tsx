@@ -1,4 +1,4 @@
-import { motion } from "framer-motion";
+import { motion, useReducedMotion } from "framer-motion";
 import { GridBeams } from "../ui/grid-beams";
 import { TextGenerateEffect } from "../ui/text-generate-effect";
 import { GitHubIcon, LinkedInIcon, MailIcon, ArrowDownIcon, MapPinIcon } from "../icons";
@@ -6,6 +6,8 @@ import { site } from "../../data/content";
 import ericPhoto from "../../assets/eric.jpg";
 
 export function Hero() {
+  const reduceMotion = useReducedMotion();
+
   return (
     <section
       id="top"
@@ -38,7 +40,7 @@ export function Hero() {
           <span className="mx-1 h-3 w-px bg-zinc-900/15 dark:bg-white/15" />
           <span className="flex items-center gap-1.5">
             <span className="relative flex h-2 w-2">
-              <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-emerald-400 opacity-60" />
+              <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-emerald-400 opacity-60 motion-reduce:animate-none" />
               <span className="relative inline-flex h-2 w-2 rounded-full bg-emerald-400" />
             </span>
             VP Engineering @ Paladin
@@ -76,7 +78,7 @@ export function Hero() {
         >
           <a
             href="#experience"
-            className="inline-flex h-12 animate-shimmer items-center justify-center rounded-full border border-white/15 bg-[linear-gradient(110deg,#150f22,45%,#38295c,55%,#150f22)] bg-[length:200%_100%] px-8 text-sm font-medium text-white transition-colors hover:border-white/30 focus:outline-none focus:ring-2 focus:ring-violet-400/50"
+            className="inline-flex h-12 animate-shimmer items-center justify-center rounded-full border border-white/15 bg-[linear-gradient(110deg,#150f22,45%,#38295c,55%,#150f22)] bg-[length:200%_100%] px-8 text-sm font-medium text-white transition-colors hover:border-white/30 focus:outline-none focus:ring-2 focus:ring-violet-400/50 motion-reduce:animate-none"
           >
             See the work
           </a>
@@ -130,7 +132,10 @@ export function Hero() {
         transition={{ delay: 1.6, duration: 0.8 }}
         className="absolute bottom-8 left-1/2 z-10 -translate-x-1/2 text-zinc-400 transition-colors hover:text-zinc-600 dark:text-zinc-600 dark:hover:text-zinc-300"
       >
-        <motion.div animate={{ y: [0, 8, 0] }} transition={{ repeat: Infinity, duration: 2 }}>
+        <motion.div
+          animate={reduceMotion ? undefined : { y: [0, 8, 0] }}
+          transition={{ repeat: Infinity, duration: 2 }}
+        >
           <ArrowDownIcon className="h-5 w-5" />
         </motion.div>
       </motion.a>

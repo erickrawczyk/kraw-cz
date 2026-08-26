@@ -46,7 +46,7 @@ export function Contact() {
         >
           <a
             href={site.emailHref}
-            className="inline-flex h-12 animate-shimmer items-center justify-center gap-2 rounded-full border border-white/15 bg-[linear-gradient(110deg,#150f22,45%,#38295c,55%,#150f22)] bg-[length:200%_100%] px-8 text-sm font-medium text-white transition-colors hover:border-white/30"
+            className="inline-flex h-12 animate-shimmer items-center justify-center gap-2 rounded-full border border-white/15 bg-[linear-gradient(110deg,#150f22,45%,#38295c,55%,#150f22)] bg-[length:200%_100%] px-8 text-sm font-medium text-white transition-colors hover:border-white/30 motion-reduce:animate-none"
           >
             <MailIcon className="h-4 w-4" />
             {site.email}
