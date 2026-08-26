@@ -19,8 +19,8 @@ export const site = {
 export const about = {
   heading: "Jack of all trades, master of some.",
   paragraphs: [
-    "I'm a generalist who builds software products, everything from shaping the problem with users, designing the system, shipping the interface, wiring the infrastructure, and tuning what happens after launch. I've spent ten years doing that work with early and growth-stage B2B startups, where the job description is \"whatever the product needs next.\"",
-    "These days I lead engineering at Paladin as VP of Engineering, where we build the platform legal teams use to run pro bono programs and turns professional development into actual representation for people who need it. I still ship code most weeks; leading a team well and staying close to the product aren't opposites, they're the same job.",
+    "I'm a generalist who builds software products, everything from shaping the problem with users, designing the system, to shipping the interface, wiring the infrastructure, and tuning what happens after launch. I've spent ten years doing that work with early and growth-stage B2B startups, where the job description is \"whatever the product needs next.\"",
+    "These days I lead engineering at Paladin as VP of Engineering, where we build the platform legal teams use to run pro bono programs and turns professional development into actual representation for people who need it. I still ship code most weeks; leading a team well and staying close to the product are two sides of the same job.",
     "I believe technology is essential for equitable progress, and I like working on things where the graph going up means someone's life got a little better.",
   ],
   stats: [
@@ -64,7 +64,7 @@ export const jobs: Job[] = [
       { title: "Senior Software Engineer", period: "2021 — 2022" },
     ],
     bullets: [
-      "Grew from senior engineer to leading the engineering team. I now run hiring, mentorship, architecture, and delivery for the platform behind 30+ of the world's largest legal teams and 350+ legal aid organizations.",
+      "Grew from senior engineer to leading the engineering team. I now run hiring, mentorship, architecture, and delivery for the platform behind 50+ of the world's largest legal teams and 400+ legal aid organizations.",
       "Directed the build and launch of Paladin Insights, a real-time pro bono analytics product that came out of Paladin's acquisition of Pro Bono Manager, then led the migration of its Am Law 100 customers onto the platform.",
       "Rebuilt the server-rendered Django frontend as a React single-page app: opportunity search got about 10x faster and lawyer engagement with pro bono opportunities rose about 20%.",
       "Shipped time tracking for corporate teams and a pro bono platform for about 30 law schools, while keeping a small team's release train reliable.",
@@ -157,7 +157,7 @@ export const contractProjects: Project[] = [
     period: "2018",
     role: "Contract",
     description:
-      "A race finder built for the Spartan Nomads community — every Spartan obstacle race on Earth, searchable by continent, month, and race type, and scored on difficulty, landscape, and festival to help nomads plan their next trifecta.",
+      "A race finder built for the Spartan Nomads community — every Spartan obstacle race, searchable by continent, month, and race type, and scored on difficulty, landscape, and festival to help nomads plan their next trifecta.",
     tags: ["Fitness community", "Search & discovery", "React"],
     image: "/projects/spartanlist.jpg",
   },
@@ -182,7 +182,7 @@ export const sideProjects: Project[] = [
     role: "Cofounder",
     description:
       "A community storytelling project collecting and sharing what \"queer\" means to the people who live it — one definition at a time.",
-    tags: ["Community", "Storytelling", "LGBTQ+"],
+    tags: ["Community", "Storytelling", "LGBTQ+", "React"],
     image: "/projects/define-queer.png",
   },
   {
@@ -192,7 +192,7 @@ export const sideProjects: Project[] = [
     role: "Tech Lead",
     description:
       "A full-stack web app for making friends as an adult: matching people into low-stakes platonic friend dates instead of leaving new connections to chance.",
-    tags: ["Full-stack", "Matchmaking", "Web app"],
+    tags: ["Full-stack", "Matchmaking", "React", "Node"],
     image: "/projects/argo.png",
   }
 ];
@@ -223,32 +223,30 @@ export const capabilities = [
 
 export const beyond = {
   heading: "Beyond the keyboard",
-  blurb:
-    "I like building things people gather around, on screen and off. The common thread is community.",
+  blurb: "A few things I spend my free time on: building, burning, and staying off the grid.",
   items: [
-    {
-      key: "313cc",
-      title: "313 Care Collective",
-      link: "https://313cc.org",
-      role: "First responder & instructor",
-      description:
-        "Community health organization providing first aid, training, supplies, and logistical support for local political action in Detroit, MI.",
-    },
-    {
-      key: "fourlakes",
-      title: "Four Lakes Action Medics",
-      role: "First responder",
-      description:
-        "Street medic collective providing first aid and medical support for community events and political action around Madison, WI.",
-    },
     {
       key: "syncytium",
       title: "Syncytium Arts",
       link: "https://syncytium.org",
       role: "Artist, fabricator & bar lead",
       description:
-        "An artist collective rooted in Michigan that builds immersive installations for Burning Man and art events across the country.",
+        "An artist collective and Burning Man theme camp — I fabricate art cars and installations, run bar ops in Black Rock City and regional burns, and help build immersive experiences at art events across the country.",
+    },
+    {
+      key: "offgrid",
+      title: "Off-Grid Tech",
+      role: "Tinkerer",
+      description:
+        "Building off-grid power systems and long-range mesh radio networks with Meshtastic — power and comms that don't need the grid or the internet. Currently putting all of it to the test in my part-time van home.",
+    },
+    {
+      key: "firespinning",
+      title: "Fire Spinning",
+      role: "Flow artist",
+      description:
+        "Contact Staff, Poi, and whatever else will light: practiced at burns, backyard jams, beaches, and any other excuse to spin.",
     },
   ],
-  extras: "Otherwise: theatre, live music, biking, hiking, off-grid power and comms, and dogs. Always dogs.",
+  extras: "Otherwise: theatre, live music, biking, hiking, and dogs. Always dogs.",
 };
