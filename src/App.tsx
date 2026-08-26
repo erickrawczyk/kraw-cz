@@ -7,14 +7,22 @@ import { Portfolio } from "./components/sections/Portfolio";
 import { Capabilities } from "./components/sections/Capabilities";
 import { Beyond } from "./components/sections/Beyond";
 import { Contact } from "./components/sections/Contact";
-import { GitHubIcon, LinkedInIcon, MailIcon } from "./components/icons";
+import {
+  GitHubIcon,
+  LinkedInIcon,
+  MailIcon,
+  UserIcon,
+  BriefcaseIcon,
+  GridIcon,
+  CompassIcon,
+} from "./components/icons";
 import { site } from "./data/content";
 
 const navItems = [
-  { name: "About", link: "#about" },
-  { name: "Experience", link: "#experience" },
-  { name: "Portfolio", link: "#projects" },
-  { name: "Beyond", link: "#beyond" },
+  { name: "About", link: "#about", icon: <UserIcon className="h-4 w-4" /> },
+  { name: "Experience", link: "#experience", icon: <BriefcaseIcon className="h-4 w-4" /> },
+  { name: "Portfolio", link: "#projects", icon: <GridIcon className="h-4 w-4" /> },
+  { name: "Beyond", link: "#beyond", icon: <CompassIcon className="h-4 w-4" /> },
 ];
 
 export default function App() {
