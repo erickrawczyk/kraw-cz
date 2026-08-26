@@ -77,9 +77,9 @@ export function Portfolio() {
         className="mt-16"
       >
         <div className="flex items-center gap-4">
-          <div className="h-px flex-1 bg-gradient-to-l from-zinc-900/10 to-transparent dark:from-white/10" />
+          <div className="h-px flex-1 bg-gradient-to-r from-transparent to-violet-500/40" />
           <h3 className="font-display text-lg font-medium text-zinc-700 dark:text-zinc-300">Side Quests</h3>
-          <div className="h-px flex-1 bg-gradient-to-r from-zinc-900/10 to-transparent dark:from-white/10" />
+          <div className="h-px flex-1 bg-gradient-to-r from-cyan-500/40 to-transparent" />
         </div>
         <div className="mt-4">
           <HoverEffect

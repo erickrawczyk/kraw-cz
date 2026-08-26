@@ -60,7 +60,7 @@ export function Card({
   return (
     <div
       className={cn(
-        "relative z-20 h-full w-full overflow-hidden rounded-2xl border border-zinc-200 bg-white p-1 shadow-sm transition-colors duration-300 group-hover:border-zinc-300 dark:border-white/[0.08] dark:bg-night-900 dark:shadow-none dark:group-hover:border-white/[0.18]",
+        "relative z-20 h-full w-full overflow-hidden rounded-2xl border border-zinc-200 bg-white p-1 shadow-sm transition-colors duration-300 group-hover:border-violet-400/50 dark:border-white/[0.08] dark:bg-night-900 dark:shadow-none dark:group-hover:border-violet-400/30",
         className
       )}
     >
