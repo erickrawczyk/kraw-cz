@@ -19,8 +19,8 @@ export const site = {
 export const about = {
   heading: "Jack of all trades, master of some.",
   paragraphs: [
-    "I'm a generalist who builds software products, everything from shaping the problem with users, designing the system, to shipping the interface, wiring the infrastructure, and tuning what happens after launch. I've spent ten years doing that work with early and growth-stage B2B startups, where the job description is \"whatever the product needs next.\"",
-    "These days I lead engineering at Paladin as VP of Engineering, where we build the platform legal teams use to run pro bono programs and turns professional development into actual representation for people who need it. I still ship code most weeks; leading a team well and staying close to the product are two sides of the same job.",
+    "I'm a generalist who builds software products, everything from shaping the problem with users and designing the system to shipping the interface, wiring the infrastructure, and tuning what happens after launch. I've spent ten years doing that work with early and growth-stage B2B startups, where the job description is \"whatever the product needs next.\"",
+    "These days I lead engineering at Paladin as VP of Engineering, where we build the platform legal teams use to run pro bono programs, one that turns professional development into actual representation for people who need it. I still ship code most weeks; leading a team well and staying close to the product are two sides of the same job.",
     "I believe technology is essential for equitable progress, and I like working on things where the graph going up means someone's life got a little better.",
   ],
   stats: [
