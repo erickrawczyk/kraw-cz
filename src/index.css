@@ -1,0 +1,76 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+  --grid-line: rgba(0, 0, 0, 0.055);
+}
+
+.dark {
+  color-scheme: dark;
+  --grid-line: rgba(255, 255, 255, 0.04);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+a:focus-visible,
+button:focus-visible {
+  @apply outline-none ring-2 ring-violet-500 ring-offset-2 ring-offset-zinc-50 dark:ring-violet-400 dark:ring-offset-night-950;
+}
+
+body {
+  @apply bg-zinc-50 text-zinc-600 antialiased font-sans dark:bg-night-950 dark:text-zinc-300;
+  overflow-x: hidden;
+}
+
+::selection {
+  background: rgba(167, 139, 250, 0.35);
+}
+.dark ::selection {
+  color: #fff;
+}
+
+/* Faint blueprint grid used behind the hero */
+.bg-grid {
+  background-image:
+    linear-gradient(to right, var(--grid-line) 1px, transparent 1px),
+    linear-gradient(to bottom, var(--grid-line) 1px, transparent 1px);
+  background-size: 64px 64px;
+}
+
+.text-gradient {
+  @apply bg-gradient-to-r from-violet-600 via-zinc-900 to-cyan-600 bg-clip-text text-transparent dark:from-violet-300 dark:via-white dark:to-cyan-300;
+}
+
+/* Subtle scrollbar that follows the theme */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #f4f4f5;
+}
+::-webkit-scrollbar-thumb {
+  background: #d4d4d8;
+  border-radius: 8px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #a1a1aa;
+}
+.dark ::-webkit-scrollbar-track {
+  background: #0c0a14;
+}
+.dark ::-webkit-scrollbar-thumb {
+  background: #2d2544;
+}
+.dark ::-webkit-scrollbar-thumb:hover {
+  background: #3c3159;
+}

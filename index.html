@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <script>
+      // Set theme before first paint to avoid a flash of the wrong mode.
+      const theme =
+        localStorage.getItem("theme") ??
+        (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+      if (theme === "dark") document.documentElement.classList.add("dark");
+    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Eric Krawczyk · Product Technologist</title>
+    <meta
+      name="description"
+      content="Eric Krawczyk is a product technologist in Chicago, IL - a generalist engineer who builds software products end to end, currently leading engineering at Paladin."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Eric Krawczyk · Product Technologist" />
+    <meta
+      property="og:description"
+      content="A generalist engineer who builds software products end to end, across legal tech, renewable energy, healthcare, and network analytics."
+    />
+    <meta property="og:url" content="https://eric.kraw.cz/" />
+    <meta property="og:image" content="https://eric.kraw.cz/og.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Eric Krawczyk · Product Technologist" />
+    <meta
+      name="twitter:description"
+      content="A generalist engineer who builds software products end to end, across legal tech, renewable energy, healthcare, and network analytics."
+    />
+    <meta name="twitter:image" content="https://eric.kraw.cz/og.png" />
+    <link rel="canonical" href="https://eric.kraw.cz/" />
+    <meta name="theme-color" content="#fafafa" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#060510" media="(prefers-color-scheme: dark)" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="alternate icon" href="/favicon.ico" sizes="32x32" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Eric Krawczyk",
+        "jobTitle": "VP of Engineering",
+        "url": "https://eric.kraw.cz/",
+        "image": "https://eric.kraw.cz/og.png",
+        "worksFor": {
+          "@type": "Organization",
+          "name": "Paladin",
+          "url": "https://www.joinpaladin.com"
+        },
+        "sameAs": [
+          "https://github.com/erickrawczyk",
+          "https://www.linkedin.com/in/eric-krawczyk"
+        ]
+      }
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
