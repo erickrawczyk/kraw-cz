@@ -26,27 +26,15 @@ export default {
         night: {
           950: "#060510",
           900: "#0c0a14",
-          850: "#110d1c",
-          800: "#171226",
         },
       },
       animation: {
-        spotlight: "spotlight 2s ease .75s 1 forwards",
         shimmer: "shimmer 2s linear infinite",
-        "fade-in": "fadeIn 0.8s ease forwards",
       },
       keyframes: {
-        spotlight: {
-          "0%": { opacity: "0", transform: "translate(-72%, -62%) scale(0.5)" },
-          "100%": { opacity: "1", transform: "translate(-50%, -40%) scale(1)" },
-        },
         shimmer: {
           from: { backgroundPosition: "0 0" },
           to: { backgroundPosition: "-200% 0" },
-        },
-        fadeIn: {
-          from: { opacity: "0", transform: "translateY(12px)" },
-          to: { opacity: "1", transform: "translateY(0)" },
         },
       },
     },
